@@ -1,4 +1,21 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Floor.tres" type="TileSet" id=1]
+[ext_resource path="res://Walls.tres" type="TileSet" id=2]
 
 [node name="Main" type="Node2D"]
+
+[node name="floor" type="TileMap" parent="."]
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 64, 32 )
+format = 1
+tile_data = PoolIntArray( -327677, 1, 0, -327676, 1, 0, -262143, 1, 0, -262142, 1, 0, -262141, 1, 0, -262140, 1, 0, -196607, 1, 0, -196606, 1, 0, -196605, 1, 0, -196604, 1, 0, -196603, 1, 0, -196602, 1, 0, -196601, 1, 0, -131071, 1, 0, -131070, 1, 0, -131069, 1, 0, -131068, 1, 0, -131067, 1, 0, -131066, 1, 0, -131065, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65532, 1, 0 )
+
+[node name="walls" type="TileMap" parent="."]
+mode = 1
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 64, 32 )
+format = 1
+tile_data = PoolIntArray( -327681, 0, 0, -393216, 0, 0, -393215, 0, 0, -393214, 0, 0, -393213, 0, 0, -393212, 0, 0, -262145, 0, 0, -327676, 2, 0, -327675, 2, 0, -327674, 2, 0, -196609, 0, 0, -131073, 0, 0, -65537, 0, 0, -131068, 2, 0, -131067, 2, 0, -131066, 2, 0, -1, 0, 0, -65536, 2, 0, -65535, 2, 0, -65534, 2, 0, -65533, 2, 0, -65532, 2, 0 )
 
