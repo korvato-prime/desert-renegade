@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Badass_Cactus.gd" type="Script" id=1]
 [ext_resource path="res://badass_cactus.png" type="Texture" id=2]
+[ext_resource path="res://Arm_cannon.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -19,4 +20,7 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="Node2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0.507065, -0.353809 )
 
