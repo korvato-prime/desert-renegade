@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Badass_Cactus.gd" type="Script" id=1]
-[ext_resource path="res://badass_cactus.png" type="Texture" id=2]
-[ext_resource path="res://Arm_cannon.tscn" type="PackedScene" id=3]
+[ext_resource path="res://source/characters/player/BadassCactus.gd" type="Script" id=1]
+[ext_resource path="res://graphics/images/badass_cactus.png" type="Texture" id=2]
+[ext_resource path="res://source/characters/player/Cannon.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 extents = Vector2( 8.01253, 3.76233 )
 
-[node name="Badass_Cactus" type="KinematicBody2D"]
+[node name="BadassCactus" type="KinematicBody2D"]
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]

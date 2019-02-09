@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Palette_NTSC.png-f389e2cfbb4da1a22da00e0e7dd33fa6.stex"
+path="res://.import/Palette_NTSC.png-127526aa161ba2acfc959ce32b405d9f.stex"
 
 [deps]
 
-source_file="res://Palette_NTSC.png"
-dest_files=[ "res://.import/Palette_NTSC.png-f389e2cfbb4da1a22da00e0e7dd33fa6.stex" ]
+source_file="res://graphics/images/Palette_NTSC.png"
+dest_files=[ "res://.import/Palette_NTSC.png-127526aa161ba2acfc959ce32b405d9f.stex" ]
 
 [params]
 

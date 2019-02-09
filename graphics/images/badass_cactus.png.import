@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gun_arm.png-f78bd76914e32c5629e1933436540313.stex"
+path="res://.import/badass_cactus.png-650d5c4f4051eac1aabf66cd888ae92e.stex"
 
 [deps]
 
-source_file="res://gun_arm.png"
-dest_files=[ "res://.import/gun_arm.png-f78bd76914e32c5629e1933436540313.stex" ]
+source_file="res://graphics/images/badass_cactus.png"
+dest_files=[ "res://.import/badass_cactus.png-650d5c4f4051eac1aabf66cd888ae92e.stex" ]
 
 [params]
 

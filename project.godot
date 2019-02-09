@@ -16,13 +16,21 @@ _global_script_class_icons={
 [application]
 
 config/name="Desert Renegade"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://source/Game.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://source/global/Global.tscn"
 
 [display]
 
 window/size/width=256
 window/size/height=240
+window/size/test_width=512
+window/size/test_height=480
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [global]
 
