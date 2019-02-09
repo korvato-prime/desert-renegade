@@ -30,7 +30,7 @@ window/size/height=240
 window/size/test_width=512
 window/size/test_height=480
 window/stretch/mode="viewport"
-window/stretch/aspect="expand"
+window/stretch/aspect="keep"
 
 [global]
 
