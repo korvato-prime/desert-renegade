@@ -20,6 +20,6 @@ cell_size = Vector2( 64, 32 )
 format = 1
 tile_data = PoolIntArray( -327681, 0, 0, -393216, 0, 0, -393215, 0, 0, -393214, 0, 0, -393213, 0, 0, -393212, 0, 0, -262145, 0, 0, -327676, 2, 0, -327675, 2, 0, -327674, 2, 0, -196609, 0, 0, -131073, 0, 0, -65537, 0, 0, -131068, 2, 0, -131067, 2, 0, -131066, 2, 0, -1, 0, 0, -65536, 2, 0, -65535, 2, 0, -65534, 2, 0, -65533, 2, 0, -65532, 2, 0 )
 
-[node name="Badass_Cactus" parent="walls" instance=ExtResource( 3 )]
+[node name="Badass_Cactus" parent="." instance=ExtResource( 3 )]
 position = Vector2( 162.605, -2.521 )
 

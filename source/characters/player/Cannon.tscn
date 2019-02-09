@@ -3,14 +3,19 @@
 [ext_resource path="res://source/characters/player/Cannon.gd" type="Script" id=1]
 [ext_resource path="res://graphics/images/gun_arm.png" type="Texture" id=2]
 
-
-
-
 [node name="Cannon" type="Node2D"]
 position = Vector2( 112.149, 73.4066 )
 script = ExtResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="ArmSprite" type="Sprite" parent="."]
 position = Vector2( 16.748, -0.0833435 )
 texture = ExtResource( 2 )
 
+[node name="GunPoint" type="Position2D" parent="."]
+position = Vector2( 25.4875, -0.448715 )
+
+[node name="GunTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="GunTimer" to="." method="_on_GunTimer_timeout"]
