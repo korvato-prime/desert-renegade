@@ -9,6 +9,7 @@
 extents = Vector2( 8.01253, 3.76233 )
 
 [node name="BadassCactus" type="KinematicBody2D"]
+collision_mask = 14
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
