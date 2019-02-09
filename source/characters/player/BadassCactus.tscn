@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://source/characters/player/BadassCactus.gd" type="Script" id=1]
 [ext_resource path="res://graphics/images/badass_cactus.png" type="Texture" id=2]
@@ -7,6 +7,10 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 extents = Vector2( 8.01253, 3.76233 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+extents = Vector2( 8.02029, 15.8011 )
 
 [node name="BadassCactus" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -23,4 +27,8 @@ current = true
 
 [node name="Cannon" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0.507065, -0.353809 )
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2( 0.0809937, -0.0809956 )
+shape = SubResource( 2 )
 

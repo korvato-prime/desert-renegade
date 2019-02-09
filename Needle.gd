@@ -10,8 +10,6 @@ func _physics_process(delta):
 	
 func set_needle_direction(bullet_direction):
 	direction = bullet_direction
-	#if bullet_direction == (-1):
-	#	$Sprite.flip_h = true
 
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
