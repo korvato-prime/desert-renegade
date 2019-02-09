@@ -9,7 +9,6 @@
 extents = Vector2( 8.01253, 3.76233 )
 
 [node name="BadassCactus" type="KinematicBody2D"]
-collision_mask = 14
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -22,6 +21,6 @@ shape = SubResource( 1 )
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 
-[node name="Node2D" parent="." instance=ExtResource( 3 )]
+[node name="Cannon" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0.507065, -0.353809 )
 

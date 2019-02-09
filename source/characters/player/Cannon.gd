@@ -7,6 +7,9 @@ var flip = false
 
 const NEEDLE = preload("res://source/characters/player/Needle.tscn")
 
+const SPEED = 100
+var bullet_direction = Vector2()
+
 func _process(delta):
 	_aim_gun()
 	_shoot(delta)
@@ -15,17 +18,11 @@ func _shoot(delta):
 	if Input.is_action_pressed("fire") and can_shoot:
 		can_shoot = false
 		$GunTimer.start()
-		#$Shoot.play()
-		var dir = ($GunPoint.global_transform.origin - global_transform.origin).normalized()
-		#player.emit_signal('shoot', Bullet, $ShootPoint.global_position, dir)
 		var needle = NEEDLE.instance()
-		needle.global_position = $GunPoint.position
-		if sign($GunPoint.position.x) == 1:
-			needle.set_needle_direction(1)
-		else:
-			needle.set_needle_direction(-1)
-		#"get_node("Game").add_child(needle)
-		self.add_child(needle)
+		needle.global_position = $GunPoint.global_position
+		bullet_direction = ($GunPoint.global_transform.origin - global_transform.origin).normalized()
+		needle.set_needle_direction(bullet_direction)
+		get_parent().get_parent().add_child(needle)
 		needle.rotation = self.rotation
 
 func _aim_gun():
