@@ -4,4 +4,5 @@ extends Node2D
 var Player = null
 
 # Scenes
-var Bottle = load("res://source/projectiles/Bottle.tscn")
+var Needle = preload("res://source/projectiles/Needle.tscn")
+var Bottle = preload("res://source/projectiles/Bottle.tscn")
