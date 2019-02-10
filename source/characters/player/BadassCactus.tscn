@@ -1,14 +1,49 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://source/characters/player/BadassCactus.gd" type="Script" id=1]
-[ext_resource path="res://graphics/images/badass_cactus.png" type="Texture" id=2]
-[ext_resource path="res://source/characters/player/Cannon.tscn" type="PackedScene" id=3]
+[ext_resource path="res://graphics/player/walking_downright1.png" type="Texture" id=2]
+[ext_resource path="res://graphics/player/walking_downright2.png" type="Texture" id=3]
+[ext_resource path="res://graphics/player/walking_downrigth3.png" type="Texture" id=4]
+[ext_resource path="res://graphics/player/walking_upleft1.png" type="Texture" id=5]
+[ext_resource path="res://graphics/player/walking_upleft2.png" type="Texture" id=6]
+[ext_resource path="res://graphics/player/walking_upleft3.png" type="Texture" id=7]
+[ext_resource path="res://graphics/player/walking_downleft1.png" type="Texture" id=8]
+[ext_resource path="res://graphics/player/walking_downleft2.png" type="Texture" id=9]
+[ext_resource path="res://graphics/player/walking_downleft3.png" type="Texture" id=10]
+[ext_resource path="res://graphics/player/walking_upright1.png" type="Texture" id=11]
+[ext_resource path="res://graphics/player/walking_upright2.png" type="Texture" id=12]
+[ext_resource path="res://graphics/player/walking_upright3.png" type="Texture" id=13]
+[ext_resource path="res://source/characters/player/Cannon.tscn" type="PackedScene" id=14]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="SpriteFrames" id=1]
 
-extents = Vector2( 8.01253, 3.76233 )
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "down_right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "up_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "down_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "up_right",
+"speed": 5.0
+} ]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=2]
+
+radius = 4.89767
+
+[sub_resource type="RectangleShape2D" id=3]
 
 extents = Vector2( 8.02029, 15.8011 )
 
@@ -16,21 +51,22 @@ extents = Vector2( 8.02029, 15.8011 )
 collision_mask = 22
 script = ExtResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "down_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.0769463, 12.3881 )
-shape = SubResource( 1 )
+position = Vector2( -0.190071, 7.35412 )
+shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 
-[node name="Cannon" parent="." instance=ExtResource( 3 )]
+[node name="Cannon" parent="." instance=ExtResource( 14 )]
 position = Vector2( 0.507065, -0.353809 )
 
 [node name="Hitbox" type="CollisionShape2D" parent="."]
-position = Vector2( 0.0809937, -0.0809956 )
-shape = SubResource( 2 )
+position = Vector2( -0.0886898, 0.428059 )
+shape = SubResource( 3 )
 disabled = true
 

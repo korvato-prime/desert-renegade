@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gun_arm.png-aa29ffca7f0749a868990b0809be069d.stex"
+path="res://.import/walking_downleft3.png-b0fe7c9ad297f235035de7c565e4ca32.stex"
 
 [deps]
 
-source_file="res://graphics/images/gun_arm.png"
-dest_files=[ "res://.import/gun_arm.png-aa29ffca7f0749a868990b0809be069d.stex" ]
+source_file="res://graphics/player/walking_downleft3.png"
+dest_files=[ "res://.import/walking_downleft3.png-b0fe7c9ad297f235035de7c565e4ca32.stex" ]
 
 [params]
 
@@ -21,11 +21,11 @@ flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=false
+process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0
