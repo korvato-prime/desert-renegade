@@ -11,17 +11,18 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("w"):
 		motion += Vector2(0, -1)
-		$Sprite.play("up_right")
+		$Sprite.play("up")
+	if Input.is_action_pressed("a") and Input.is_action_pressed("w"):
+		$Sprite.play("up_left")
 	if Input.is_action_pressed("s"):
 		motion += Vector2(0, 1)
-		$Sprite.play("down_left")
+		$Sprite.play("down")
 	if Input.is_action_pressed("a"):
 		motion += Vector2(-1, 0)
-		$Sprite.play("up_left")
+		$Sprite.play("left")
 	if Input.is_action_pressed("d"):
 		motion += Vector2(1, 0)
-		$Sprite.play("down_right")
-	
+		$Sprite.play("right")
 	motion = motion.normalized() * MOTION_SPEED
 
 	move_and_slide(motion)
