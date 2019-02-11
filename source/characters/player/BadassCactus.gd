@@ -61,6 +61,12 @@ func _physics_process(delta):
 		motion += Vector2(-1, 0)
 	if Input.is_action_pressed("d"):
 		motion += Vector2(1, 0)
+	if Input.is_action_pressed("jump"):
+		motion += Vector2(0, -6)
+		#$CollisionShape2D.disabled = true
+		$CollisionShape2D.one_way_collision= true
+		#get_node('/root').collision_layer = Jumping
+		$Timer.start()
 
 	motion = motion.normalized() * MOTION_SPEED
 	move_and_slide(motion)
@@ -71,4 +77,8 @@ func direction2str(direction):
         angle += 2 * PI
     var index = round(angle / PI * 4)
     return directions[index]
-
+	
+func _on_Timer_timeout():
+	#$CollisionShape2D.disabled = false
+	$CollisionShape2D.one_way_collision= false
+	pass

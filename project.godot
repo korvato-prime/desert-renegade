@@ -65,6 +65,11 @@ fire={
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
  ]
 }
+jump={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [layer_names]
 
@@ -73,6 +78,7 @@ fire={
 2d_physics/layer_3="Enemies"
 2d_physics/layer_4="PlayerProjectiles"
 2d_physics/layer_5="EnemyProjectiles"
+2d_physics/layer_6="Jumping"
 
 [rendering]
 
