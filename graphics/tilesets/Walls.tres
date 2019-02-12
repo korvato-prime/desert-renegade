@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=12 format=2]
+[gd_resource type="TileSet" load_steps=16 format=2]
 
 [ext_resource path="res://graphics/images/tileset_atlas.png" type="Texture" id=1]
 
@@ -10,9 +10,25 @@ points = PoolVector2Array( 31.6684, 31.2808, 63.4527, 46.7853, 30.6994, 63.4527,
 
 points = PoolVector2Array( 31.3894, 31.3934, 63.9415, 16.122, 63.5396, 48.6741, 32.1931, 62.7398 )
 
+[sub_resource type="ConvexPolygonShape2D" id=16]
+
+points = PoolVector2Array( 15.984, 36.6024, 13.6397, 31.2441, 10.9606, 30.2394, 8.61627, 26.5555, 9.62097, 16.1737, 18.6632, 12.8247, 18.9981, 22.8716, 28.3753, 23.8763, 33.0638, 29.9045, 29.7148, 35.2628, 29.045, 40.9561, 22.3471, 42.2957, 17.3236, 39.9514 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+
+points = PoolVector2Array( 11.9308, 42.6306, 10.9261, 23.2065, 23.6522, 17.8482, 23.6522, 27.5602, 33.3642, 32.9186, 34.034, 42.6306, 23.6522, 48.3239 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+
+points = PoolVector2Array( 17.3926, 31.3598, 31.1234, 32.0296, 27.4396, 41.4067, 21.0765, 40.0671 )
+
 [sub_resource type="ConvexPolygonShape2D" id=4]
 
 points = PoolVector2Array( 31.1645, 31.4696, 62.7938, 46.3539, 30.932, 63.7965, 0, 46.8191 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+
+points = PoolVector2Array( 21.3769, 41.4067, 15.6837, 32.0296, 28.7447, 32.0296, 25.7306, 40.7369 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
@@ -40,7 +56,7 @@ points = PoolVector2Array( 32.4975, 32.6477, 63.643, 47.7181, 31.8277, 63.7932, 
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
 
-points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683, 31.1924, 0.797943, 91.809, 30.6039, 92.1439, 37.3018 )
+points = PoolVector2Array( 66.196, 5.05785, 91.7554, 17.5964, 44.4946, 45.0849, 17.0062, 30.6173 )
 
 [resource]
 
@@ -212,7 +228,13 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 12/tile_mode = 0
 12/occluder_offset = Vector2( 0, 0 )
 12/navigation_offset = Vector2( 0, 0 )
-12/shapes = [  ]
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 12/z_index = 0
 13/name = "tileset_atlas.png 13"
 13/texture = ExtResource( 1 )
@@ -222,7 +244,13 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 13/tile_mode = 0
 13/occluder_offset = Vector2( 0, 0 )
 13/navigation_offset = Vector2( 0, 0 )
-13/shapes = [  ]
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 13/z_index = 0
 14/name = "tileset_atlas.png 14"
 14/texture = ExtResource( 1 )
@@ -254,4 +282,96 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 16/navigation_offset = Vector2( 0, 0 )
 16/shapes = [  ]
 16/z_index = 0
+17/name = "tileset_atlas.png 17"
+17/texture = ExtResource( 1 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 384, 128, 64, 64 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shapes = [  ]
+17/z_index = 0
+18/name = "tileset_atlas.png 18"
+18/texture = ExtResource( 1 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 320, 160, 64, 64 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shapes = [  ]
+18/z_index = 0
+19/name = "tileset_atlas.png 19"
+19/texture = ExtResource( 1 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 128, 192, 64, 64 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+19/z_index = 0
+20/name = "tileset_atlas.png 20"
+20/texture = ExtResource( 1 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 192, 192, 64, 64 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 0, 0 )
+20/navigation_offset = Vector2( 0, 0 )
+20/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+20/z_index = 0
+21/name = "tileset_atlas.png 21"
+21/texture = ExtResource( 1 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 0, 320, 64, 64 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/shapes = [  ]
+21/z_index = 0
+22/name = "tileset_atlas.png 22"
+22/texture = ExtResource( 1 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 64, 320, 64, 64 )
+22/tile_mode = 0
+22/occluder_offset = Vector2( 0, 0 )
+22/navigation_offset = Vector2( 0, 0 )
+22/shapes = [  ]
+22/z_index = 0
+23/name = "tileset_atlas.png 23"
+23/texture = ExtResource( 1 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 128, 320, 64, 64 )
+23/tile_mode = 0
+23/occluder_offset = Vector2( 0, 0 )
+23/navigation_offset = Vector2( 0, 0 )
+23/shapes = [  ]
+23/z_index = 0
+24/name = "tileset_atlas.png 24"
+24/texture = ExtResource( 1 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 192, 320, 64, 64 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 0, 0 )
+24/navigation_offset = Vector2( 0, 0 )
+24/shapes = [  ]
+24/z_index = 0
 
