@@ -1,12 +1,14 @@
-extends KinematicBody2D
+class_name Enemy extends KinematicBody2D
 
 var motion = Vector2(0, 0)
 
+export(int) var health = 3
 export(int) var speed = 100
 export(int) var vision = 180
 export(int) var attack_range = 80
 export(int) var shoot_timeout = 1
 
+onready var anim = $AnimationPlayer
 onready var shoot_timer = $ShootTimer
 
 func _ready():
@@ -24,6 +26,12 @@ func _process(delta):
 func _draw():
 	draw_circle(to_local(global_position), attack_range, Color("20ff0000"))
 	draw_circle(to_local(global_position), vision, Color("200000ff"))
+
+func hurt():
+	health -= 1
+	anim.play("hurt")
+	if health == 0:
+		queue_free()
 
 func move_to_player(delta):
 	var direction = (Global.Player.global_position - global_position).normalized()

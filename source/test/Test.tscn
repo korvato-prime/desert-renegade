@@ -27,9 +27,6 @@ tile_data = PoolIntArray( -327684, 0, 0, -327683, 0, 0, -327682, 0, 0, -327681, 
 
 [node name="BadassCactus" parent="." instance=ExtResource( 3 )]
 
-[node name="Camera2D" parent="BadassCactus" index="2"]
-zoom = Vector2( 2, 2 )
-
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
 position = Vector2( 33, 27 )
 
