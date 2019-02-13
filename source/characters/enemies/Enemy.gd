@@ -24,8 +24,9 @@ func _process(delta):
 		move_to_player(delta)
 
 func _draw():
-	draw_circle(to_local(global_position), attack_range, Color("20ff0000"))
-	draw_circle(to_local(global_position), vision, Color("200000ff"))
+	# draw_circle(to_local(global_position), attack_range, Color("20ff0000"))
+	# draw_circle(to_local(global_position), vision, Color("200000ff"))
+	pass
 
 func hurt():
 	health -= 1

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Renagade_cactus_Level_2.ogg-1932673a476d6ac66419313d5de6a679.oggstr"
+
+[deps]
+
+source_file="res://music/Renagade_cactus_Level_2.ogg"
+dest_files=[ "res://.import/Renagade_cactus_Level_2.ogg-1932673a476d6ac66419313d5de6a679.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
