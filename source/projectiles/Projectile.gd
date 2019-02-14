@@ -1,12 +1,13 @@
 extends Area2D
 
 var direction = null
-var speed = 200
-
 var fire = false
 
+export(int) var speed = 200
+export(bool) var rotate = false
+
 func _process(delta):
-	if fire:
+	if fire and rotate:
 		rotation_degrees = int(rotation_degrees + delta * 400) % 360
 
 func _physics_process(delta):
@@ -16,6 +17,7 @@ func _physics_process(delta):
 func initialize(position, destination):
 	self.global_position = position
 	self.direction = (destination - global_position).normalized()
+	look_at(destination)
 
 func fire():
 	fire = true

@@ -1,18 +1,24 @@
 class_name Enemy extends KinematicBody2D
 
 var motion = Vector2(0, 0)
+var clip_size = 1
 
 export(int) var health = 3
 export(int) var speed = 100
 export(int) var vision = 180
 export(int) var attack_range = 80
-export(int) var shoot_timeout = 1
+export(int) var max_clip_size = 1
+export(float) var shoot_time = 1
+export(float) var reload_time = 1
 
 onready var anim = $AnimationPlayer
+
 onready var shoot_timer = $ShootTimer
+onready var reload_timer = $ReloadTimer
 
 func _ready():
-	shoot_timer.wait_time = shoot_timeout
+	shoot_timer.wait_time = shoot_time
+	reload_timer.wait_time = reload_time
 
 func _process(delta):
 	update()
@@ -24,10 +30,9 @@ func _process(delta):
 		move_to_player(delta)
 
 func _draw():
-	# draw_circle(to_local(global_position), attack_range, Color("20ff0000"))
-	# draw_circle(to_local(global_position), vision, Color("200000ff"))
-	pass
-
+	draw_circle(to_local(global_position), attack_range, Color("20ff0000"))
+	draw_circle(to_local(global_position), vision, Color("200000ff"))
+	
 func hurt():
 	health -= 1
 	anim.play("hurt")
@@ -39,14 +44,7 @@ func move_to_player(delta):
 	move_and_slide(direction * Vector2(speed, speed))
 
 func shoot():
-	
-	if shoot_timer.is_stopped():
-		var bottle = Global.Bottle.instance()
-		
-		get_parent().add_child(bottle)
-		bottle.initialize(global_position, Global.Player.global_position)
-		bottle.fire()
-		shoot_timer.start()
+	print("Overwrite!")
 
 func is_player_in_radius(radius):
 	
@@ -54,3 +52,7 @@ func is_player_in_radius(radius):
 		return false
 	
 	return (Global.Player.global_position - global_position).length() < radius
+
+
+func _on_ReloadTimer_timeout():
+	clip_size = max_clip_size
