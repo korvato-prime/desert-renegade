@@ -4,8 +4,9 @@
 [ext_resource path="res://source/characters/enemies/Cop.gd" type="Script" id=2]
 [ext_resource path="res://graphics/cop.png" type="Texture" id=3]
 
-[node name="Cop" index="0" instance=ExtResource( 1 )]
+[node name="Cop" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+health = 7
 attack_range = 120
 max_clip_size = 3
 shoot_time = 0.2

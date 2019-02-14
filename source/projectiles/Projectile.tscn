@@ -19,4 +19,7 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
+[node name="LifeTimer" type="Timer" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_Bottle_body_entered"]
+[connection signal="timeout" from="LifeTimer" to="." method="_on_LifeTimer_timeout"]

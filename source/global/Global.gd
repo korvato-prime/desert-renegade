@@ -5,6 +5,9 @@ var Player = null
 
 # Scenes
 var Needle = preload("res://source/projectiles/Needle.tscn")
+
+var Fire = preload("res://source/projectiles/Fire.tscn")
+
 var Bottle = preload("res://source/projectiles/Bottle.tscn")
 var Bullet = preload("res://source/projectiles/Bullet.tscn")
 var Brush = preload("res://source/projectiles/Brush.tscn")

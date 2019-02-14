@@ -6,6 +6,9 @@
 
 [node name="Inmate" index="0" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+health = 9
+attack_range = 90
+reload_time = 2.0
 
 [node name="Sprite" parent="." index="1"]
 texture = ExtResource( 3 )

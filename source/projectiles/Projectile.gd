@@ -3,8 +3,15 @@ extends Area2D
 var direction = null
 var fire = false
 
+export(float) var lifetime = 2
 export(int) var speed = 200
 export(bool) var rotate = false
+
+onready var life_timer = $LifeTimer
+	
+func _ready():
+	life_timer.wait_time = lifetime
+	life_timer.start()
 
 func _process(delta):
 	if fire and rotate:
@@ -29,3 +36,6 @@ func _on_Bottle_body_entered(body):
 	else:
 		print(body.name)
 		queue_free()
+
+func _on_LifeTimer_timeout():
+	queue_free()
