@@ -12,5 +12,7 @@ var Bottle = preload("res://source/projectiles/Bottle.tscn")
 var Bullet = preload("res://source/projectiles/Bullet.tscn")
 var Brush = preload("res://source/projectiles/Brush.tscn")
 var Glass = preload("res://source/projectiles/Glass.tscn")
+var Knife = preload("res://source/projectiles/Knife.tscn")
+var MysteryBullet = preload("res://source/projectiles/MysteryBullet.tscn")
 
 var Fire = preload("res://source/items/Fire.tscn")

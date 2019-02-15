@@ -3,7 +3,9 @@ extends Enemy
 var projectiles = [
 	Global.Bottle,
 	Global.Brush,
-	Global.Glass
+	Global.Glass,
+	Global.Knife,
+	Global.MysteryBullet
 ]
 
 func shoot():

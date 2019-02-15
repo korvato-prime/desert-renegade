@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mystery_bulet.png-e99be5395bb108fe8ea6115ae3bf013a.stex"
+path="res://.import/mystery_bullet.png-74d6bf76a273036c75eb96362b125c50.stex"
 
 [deps]
 
-source_file="res://graphics/bullets/mystery_bulet.png"
-dest_files=[ "res://.import/mystery_bulet.png-e99be5395bb108fe8ea6115ae3bf013a.stex" ]
+source_file="res://graphics/bullets/mystery_bullet.png"
+dest_files=[ "res://.import/mystery_bullet.png-74d6bf76a273036c75eb96362b125c50.stex" ]
 
 [params]
 
