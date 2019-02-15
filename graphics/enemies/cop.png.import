@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/inmate02.png-e5fcb78a3547b2b3b0a9011d7ce934e0.stex"
+path="res://.import/cop.png-9bfd6fd4d811302aa820d8db8a9b5abc.stex"
 
 [deps]
 
-source_file="res://graphics/inmate02.png"
-dest_files=[ "res://.import/inmate02.png-e5fcb78a3547b2b3b0a9011d7ce934e0.stex" ]
+source_file="res://graphics/enemies/cop.png"
+dest_files=[ "res://.import/cop.png-9bfd6fd4d811302aa820d8db8a9b5abc.stex" ]
 
 [params]
 

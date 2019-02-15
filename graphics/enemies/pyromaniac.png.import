@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/inmate.png-2d98cfe6a96875933656435770dbba4a.stex"
+path="res://.import/pyromaniac.png-1fad6a70cba256f5b52f742d35137a93.stex"
 
 [deps]
 
-source_file="res://graphics/inmate.png"
-dest_files=[ "res://.import/inmate.png-2d98cfe6a96875933656435770dbba4a.stex" ]
+source_file="res://graphics/enemies/pyromaniac.png"
+dest_files=[ "res://.import/pyromaniac.png-1fad6a70cba256f5b52f742d35137a93.stex" ]
 
 [params]
 

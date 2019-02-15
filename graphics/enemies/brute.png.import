@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brute.png-325bb733c90bb2c78b244dea616ad43e.stex"
+path="res://.import/brute.png-9d73b4ac1a5390a4e9a695b3f0e4d7a2.stex"
 
 [deps]
 
-source_file="res://graphics/brute.png"
-dest_files=[ "res://.import/brute.png-325bb733c90bb2c78b244dea616ad43e.stex" ]
+source_file="res://graphics/enemies/brute.png"
+dest_files=[ "res://.import/brute.png-9d73b4ac1a5390a4e9a695b3f0e4d7a2.stex" ]
 
 [params]
 

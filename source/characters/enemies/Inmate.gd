@@ -8,6 +8,11 @@ var projectiles = [
 	Global.MysteryBullet
 ]
 
+func _ready():
+	var a = [ Global.tex_inmate1, Global.tex_inmate2]
+	var tex = a[randi() % a.size()]
+	$Sprite.texture = tex
+
 func shoot():
 	
 	if shoot_timer.is_stopped() and reload_timer.is_stopped():
