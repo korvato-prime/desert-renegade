@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://graphics/tilesets/Floor.tres" type="TileSet" id=1]
-[ext_resource path="res://graphics/tilesets/Walls.tres" type="TileSet" id=2]
+[ext_resource path="res://resources/tilesets/Floor.tres" type="TileSet" id=1]
+[ext_resource path="res://resources/tilesets/Walls.tres" type="TileSet" id=2]
+
 
 [node name="TilesetTest" type="Node2D"]
 

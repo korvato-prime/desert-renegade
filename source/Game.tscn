@@ -7,8 +7,8 @@
 [ext_resource path="res://source/characters/enemies/Pyromaniac.tscn" type="PackedScene" id=5]
 [ext_resource path="res://graphics/tilesets/Floor.tres" type="TileSet" id=6]
 [ext_resource path="res://graphics/tilesets/Walls.tres" type="TileSet" id=7]
-[ext_resource path="res://graphics/images/tileset_atlas.png" type="Texture" id=8]
-[ext_resource path="res://graphics/images/security_card.png" type="Texture" id=9]
+[ext_resource path="res://graphics/images/items/tileset_atlas.png" type="Texture" id=8]
+[ext_resource path="res://graphics/images/items/security_card.png" type="Texture" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 

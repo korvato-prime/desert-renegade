@@ -1,8 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://source/characters/player/Cannon.gd" type="Script" id=1]
-[ext_resource path="res://graphics/images/gun_arm.png" type="Texture" id=2]
+[ext_resource path="res://graphics/images/items/gun_arm.png" type="Texture" id=2]
 [ext_resource path="res://audio/sfx/pump_shotgun.wav" type="AudioStream" id=3]
+
+
 
 [node name="Cannon" type="Node2D"]
 position = Vector2( 112.149, 73.4066 )

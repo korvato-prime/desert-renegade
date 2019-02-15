@@ -18,5 +18,5 @@ var MysteryBullet = preload("res://source/projectiles/MysteryBullet.tscn")
 var Fire = preload("res://source/items/Fire.tscn")
 
 # Resources
-var tex_inmate1 = preload("res://graphics/enemies/inmate.png")
-var tex_inmate2 = preload("res://graphics/enemies/inmate02.png")
+var tex_inmate1 = preload("res://graphics/images/enemies/inmate.png")
+var tex_inmate2 = preload("res://graphics/images/enemies/inmate02.png")
