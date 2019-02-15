@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Enemies_Throwing_2.wav-dbb0d88e913e28fb1eb88e7718f98911.sample"
+
+[deps]
+
+source_file="res://audio/sfx/Enemies_Throwing_2.wav"
+dest_files=[ "res://.import/Enemies_Throwing_2.wav-dbb0d88e913e28fb1eb88e7718f98911.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

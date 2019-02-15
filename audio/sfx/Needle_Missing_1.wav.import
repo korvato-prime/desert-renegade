@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Needle_Missing_1.wav-7b788fd0041bb28d7c0ca4dc4ea2b149.sample"
+
+[deps]
+
+source_file="res://audio/sfx/Needle_Missing_1.wav"
+dest_files=[ "res://.import/Needle_Missing_1.wav-7b788fd0041bb28d7c0ca4dc4ea2b149.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

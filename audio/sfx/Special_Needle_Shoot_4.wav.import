@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Special_Needle_Shoot_4.wav-632f8e642de91dc862654c29dcb373e6.sample"
+
+[deps]
+
+source_file="res://audio/sfx/Special_Needle_Shoot_4.wav"
+dest_files=[ "res://.import/Special_Needle_Shoot_4.wav-632f8e642de91dc862654c29dcb373e6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
