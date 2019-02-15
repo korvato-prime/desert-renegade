@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pump_shotgun.wav-eeedf231c695307bd32abb541936e192.sample"
+
+[deps]
+
+source_file="res://audio/sfx/pump_shotgun.wav"
+dest_files=[ "res://.import/pump_shotgun.wav-eeedf231c695307bd32abb541936e192.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

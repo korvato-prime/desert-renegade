@@ -15,6 +15,7 @@ func _process(delta):
 func _shoot(delta):
 	if Input.is_action_pressed("fire") and can_shoot:
 		can_shoot = false
+		$AudioStreamPlayer.play()
 		$GunTimer.start()
 		var needle = Global.Needle.instance()
 		needle.global_position = $GunPoint.global_position

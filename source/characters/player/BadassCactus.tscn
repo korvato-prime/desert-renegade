@@ -1,12 +1,12 @@
 [gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://source/characters/player/BadassCactus.gd" type="Script" id=1]
-[ext_resource path="res://graphics/player/walking_left1.png" type="Texture" id=2]
-[ext_resource path="res://graphics/player/walking_left2.png" type="Texture" id=3]
-[ext_resource path="res://graphics/player/walking_left3.png" type="Texture" id=4]
-[ext_resource path="res://graphics/player/walking_right1.png" type="Texture" id=5]
-[ext_resource path="res://graphics/player/walking_right2.png" type="Texture" id=6]
-[ext_resource path="res://graphics/player/walking_right3.png" type="Texture" id=7]
+[ext_resource path="res://graphics/player/walking_right1.png" type="Texture" id=2]
+[ext_resource path="res://graphics/player/walking_right2.png" type="Texture" id=3]
+[ext_resource path="res://graphics/player/walking_right3.png" type="Texture" id=4]
+[ext_resource path="res://graphics/player/walking_left1.png" type="Texture" id=5]
+[ext_resource path="res://graphics/player/walking_left2.png" type="Texture" id=6]
+[ext_resource path="res://graphics/player/walking_left3.png" type="Texture" id=7]
 [ext_resource path="res://graphics/player/walking_up1.png" type="Texture" id=8]
 [ext_resource path="res://graphics/player/walking_up2.png" type="Texture" id=9]
 [ext_resource path="res://graphics/player/walking_up3.png" type="Texture" id=10]
@@ -22,12 +22,12 @@
 [ext_resource path="res://graphics/player/walking_down1.png" type="Texture" id=20]
 [ext_resource path="res://graphics/player/walking_down2.png" type="Texture" id=21]
 [ext_resource path="res://graphics/player/walking_down3.png" type="Texture" id=22]
-[ext_resource path="res://graphics/player/walking_downleft1.png" type="Texture" id=23]
-[ext_resource path="res://graphics/player/walking_downleft2.png" type="Texture" id=24]
-[ext_resource path="res://graphics/player/walking_downleft3.png" type="Texture" id=25]
-[ext_resource path="res://graphics/player/walking_downright1.png" type="Texture" id=26]
-[ext_resource path="res://graphics/player/walking_downright2.png" type="Texture" id=27]
-[ext_resource path="res://graphics/player/walking_downright3.png" type="Texture" id=28]
+[ext_resource path="res://graphics/player/walking_downright1.png" type="Texture" id=23]
+[ext_resource path="res://graphics/player/walking_downright2.png" type="Texture" id=24]
+[ext_resource path="res://graphics/player/walking_downright3.png" type="Texture" id=25]
+[ext_resource path="res://graphics/player/walking_downleft1.png" type="Texture" id=26]
+[ext_resource path="res://graphics/player/walking_downleft2.png" type="Texture" id=27]
+[ext_resource path="res://graphics/player/walking_downleft3.png" type="Texture" id=28]
 [ext_resource path="res://source/characters/player/Cannon.tscn" type="PackedScene" id=29]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -35,12 +35,12 @@
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "left",
+"name": "right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
-"name": "right",
+"name": "left",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
@@ -70,12 +70,12 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
 "loop": true,
-"name": "down_left",
+"name": "down_right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
 "loop": true,
-"name": "down_right",
+"name": "down_left",
 "speed": 5.0
 } ]
 

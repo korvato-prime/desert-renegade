@@ -9,6 +9,8 @@ func _ready():
 var directions = ["right", "down_right", "down", "down_left", "left", "up_left", "up", "up_right"]
 var facing = Vector2()
 
+var have_card = false
+
 #func _physics_process(delta):
 #	var motion = Vector2()
 	
@@ -71,3 +73,12 @@ func direction2str(direction):
         angle += 2 * PI
     var index = round(angle / PI * 4)
     return directions[index]
+
+func _on_Level_exit_body_entered(body):
+	if have_card:
+		get_tree().change_scene("res://source/Level2.tscn")
+
+func _on_Area2D_body_entered(body):
+	have_card = true
+	$Keycard2.visible = true
+	get_parent().get_node("Keycard").visible = false
