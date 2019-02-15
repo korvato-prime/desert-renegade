@@ -3,7 +3,7 @@ extends Enemy
 func shoot():
 	
 	if shoot_timer.is_stopped() and reload_timer.is_stopped():
-		var projectile = Global.Fire.instance()
+		var projectile = Global.Flame.instance()
 		
 		get_parent().add_child(projectile)
 		projectile.initialize(global_position, Global.Player.global_position)
