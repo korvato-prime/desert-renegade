@@ -1,4 +1,4 @@
-extends Area2D
+class_name Projectile extends Area2D
 
 var direction = null
 var fire = false

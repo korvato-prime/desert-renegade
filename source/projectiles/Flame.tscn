@@ -1,18 +1,20 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://source/projectiles/Projectile.tscn" type="PackedScene" id=1]
-[ext_resource path="res://graphics/bullets/rock.png" type="Texture" id=2]
+[ext_resource path="res://source/projectiles/Flame.gd" type="Script" id=2]
+[ext_resource path="res://graphics/bullets/fireball.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 extents = Vector2( 2.90497, 3.01148 )
 
-[node name="Fire" instance=ExtResource( 1 )]
-lifetime = 0.8
-speed = 110
+[node name="Flame" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+lifetime = 0.4
 
 [node name="Sprite" parent="." index="0"]
-texture = ExtResource( 2 )
+rotation = 0.0
+texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" parent="." index="1"]
 shape = SubResource( 1 )
