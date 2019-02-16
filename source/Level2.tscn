@@ -261,6 +261,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 8 )
 
+[node name="SurviveTime" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+
 [connection signal="body_entered" from="Glitch" to="BadassCactus" method="_on_Glitch_body_entered"]
 [connection signal="body_entered" from="survivepop" to="BadassCactus" method="_on_survivepop_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="SurviveTime" to="." method="_on_SurviveTime_timeout"]

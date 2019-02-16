@@ -21,3 +21,5 @@ func _on_Glitch_body_entered(body):
 func _on_Timer_timeout():
 	$CanvasLayer2/Control/TextureRect.visible = false
 
+func _on_SurviveTime_timeout():
+	get_tree().change_scene("res://source/boss_arena.tscn")
