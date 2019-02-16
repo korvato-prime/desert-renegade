@@ -31,6 +31,12 @@ animations = [ {
 
 [node name="Pyromaniac" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+health = 8
+vision = 250
+attack_range = 180
+max_clip_size = 40
+shoot_time = 0.05
+reload_time = 3.0
 
 [node name="AudioStreamPlayer" parent="." index="0"]
 volume_db = -15.0

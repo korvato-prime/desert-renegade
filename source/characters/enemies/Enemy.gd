@@ -33,7 +33,6 @@ func _process(delta):
 		shoot()
 	elif is_player_in_radius(vision):
 		play_anim("walk")
-		play_sfx("foot_steps")
 		move_to_player(delta)
 	else:
 		play_anim("idle")

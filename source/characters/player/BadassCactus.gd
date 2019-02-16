@@ -8,11 +8,17 @@ var facing = Vector2()
 
 var have_card = false
 
+var health
+
+export(int) var max_health = 10
+
 onready var health_label = $HUD/Health
 onready var keycard = $HUD/Keycard
 
 func _ready():
 	Global.Player = self
+	health = max_health
+	health_label.text = "Health: " + str(health)
 
 func _physics_process(delta):
 	var move_direction = Vector2()
@@ -55,6 +61,12 @@ func direction2str(direction):
         angle += 2 * PI
     var index = round(angle / PI * 4)
     return directions[index]
+
+func hurt():
+	health -= 1
+	health_label.text = "Health: " + str(health)
+	if health == 0:
+		Global.change_scene(Global.GameOver)
 
 func add_keycard():
 	keycard.visible = true

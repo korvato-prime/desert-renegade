@@ -7,6 +7,8 @@ var Player = null
 var Main = "res://source/interface/Main.tscn"
 var Intro = "res://source/interface/Intro.tscn"
 var Ending = "res://source/interface/Ending.tscn"
+var GameOver = "res://source/interface/Intro.tscn"
+
 var Level1 = "res://source/Level1.tscn"
 var Level2 = "res://source/Level2.tscn"
 var Level3 = "res://source/BossArena.tscn"

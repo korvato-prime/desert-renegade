@@ -31,8 +31,9 @@ animations = [ {
 
 [node name="Cop" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+vision = 220
 
-[node name="AnimatedSprite" parent="." index="1"]
+[node name="AnimatedSprite" parent="." index="2"]
 frames = SubResource( 1 )
 animation = "walk"
 
