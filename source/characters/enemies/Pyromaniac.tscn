@@ -1,10 +1,35 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://source/characters/enemies/Enemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://source/characters/enemies/Pyromaniac.gd" type="Script" id=2]
 [ext_resource path="res://graphics/images/enemies/pyromaniac.png" type="Texture" id=3]
+[ext_resource path="res://graphics/images/enemies/pyromaniac_shooting1.png" type="Texture" id=4]
+[ext_resource path="res://graphics/images/enemies/pyromaniac_shooting2.png" type="Texture" id=5]
+[ext_resource path="res://graphics/images/enemies/pyromaniac_shooting3.png" type="Texture" id=6]
+[ext_resource path="res://graphics/images/enemies/pyromaniac_walking1.png" type="Texture" id=7]
+[ext_resource path="res://graphics/images/enemies/pyromaniac_walking2.png" type="Texture" id=8]
+[ext_resource path="res://graphics/images/enemies/pyromaniac_walking3.png" type="Texture" id=9]
 
-[node name="Pyromaniac" instance=ExtResource( 1 )]
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[node name="Pyromaniac" index="0" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 health = 12
 speed = 130
@@ -14,6 +39,6 @@ max_clip_size = 60
 shoot_time = 0.04
 reload_time = 5.0
 
-[node name="Sprite" parent="." index="1"]
-texture = ExtResource( 3 )
+[node name="AnimatedSprite" parent="." index="1"]
+frames = SubResource( 1 )
 

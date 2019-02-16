@@ -11,8 +11,8 @@ export(int) var max_clip_size = 1
 export(float) var shoot_time = 1
 export(float) var reload_time = 1
 
-onready var hurt_anim = $HurtAnimationPlayer
-
+onready var anim = $AnimationPlayer
+onready var anim_sprite = $AnimatedSprite
 onready var shoot_timer = $ShootTimer
 onready var reload_timer = $ReloadTimer
 
@@ -27,9 +27,11 @@ func _process(delta):
 	
 	if is_player_in_radius(attack_range):
 		shoot()
-	
 	elif is_player_in_radius(vision):
+		play_anim("walk")
 		move_to_player(delta)
+	else:
+		play_anim("idle")
 
 func _draw():
 	draw_circle(to_local(global_position), attack_range, Color("20ff0000"))
@@ -37,7 +39,7 @@ func _draw():
 	
 func hurt():
 	health -= 1
-	hurt_anim.play("hurt")
+	anim.play("hurt")
 	if health == 0:
 		queue_free()
 		emit_signal("death")
@@ -56,6 +58,12 @@ func is_player_in_radius(radius):
 	
 	return (Global.Player.global_position - global_position).length() < radius
 
+func play_anim(anim_name):
+	if anim_sprite.animation != anim_name:
+		anim_sprite.play(anim_name)
 
 func _on_ReloadTimer_timeout():
 	clip_size = max_clip_size
+
+func _on_AnimatedSprite_animation_finished():
+	play_anim("idle")

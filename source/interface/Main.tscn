@@ -1,26 +1,22 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://source/interface/Main.gd" type="Script" id=1]
-[ext_resource path="res://source/interface/pixel_font.tres" type="DynamicFont" id=2]
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="Tittle" type="Label" parent="."]
-margin_left = 49.3235
-margin_top = 30.0
-margin_right = 204.324
-margin_bottom = 67.0
-custom_fonts/font = ExtResource( 2 )
-custom_colors/font_color = Color( 0.0392157, 0.85098, 0.168627, 1 )
+margin_left = 55.2132
+margin_top = 21.847
+margin_right = 196.213
+margin_bottom = 52.847
 text = "SHARPFIST BREAKOUT
 "
 
 [node name="Start" type="Label" parent="."]
-margin_left = 49.9824
-margin_top = 122.679
-margin_right = 208.982
-margin_bottom = 139.679
-custom_fonts/font = ExtResource( 2 )
+margin_left = 67.1297
+margin_top = 117.179
+margin_right = 189.13
+margin_bottom = 131.179
 text = "Press Enter to start"
 
