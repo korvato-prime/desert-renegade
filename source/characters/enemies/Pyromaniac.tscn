@@ -29,16 +29,12 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Pyromaniac" index="0" instance=ExtResource( 1 )]
+[node name="Pyromaniac" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-health = 12
-speed = 130
-vision = 150
-attack_range = 70
-max_clip_size = 60
-shoot_time = 0.04
-reload_time = 5.0
 
-[node name="AnimatedSprite" parent="." index="1"]
+[node name="AudioStreamPlayer" parent="." index="0"]
+volume_db = -15.0
+
+[node name="AnimatedSprite" parent="." index="2"]
 frames = SubResource( 1 )
 

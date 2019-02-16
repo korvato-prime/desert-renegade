@@ -13,7 +13,7 @@ func shoot():
 	if shoot_timer.is_stopped() and reload_timer.is_stopped():
 		var projectile = get_random_projectile().instance()
 		play_anim("shoot")
-		
+		play_sfx("enemy_throw")
 		get_parent().add_child(projectile)
 		projectile.initialize(global_position, Global.Player.global_position)
 		projectile.fire()

@@ -31,11 +31,6 @@ animations = [ {
 
 [node name="Cop" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-health = 7
-attack_range = 120
-max_clip_size = 3
-shoot_time = 0.2
-reload_time = 3.0
 
 [node name="AnimatedSprite" parent="." index="1"]
 frames = SubResource( 1 )

@@ -13,8 +13,12 @@ export(float) var reload_time = 1
 
 onready var anim = $AnimationPlayer
 onready var anim_sprite = $AnimatedSprite
+
+onready var audio = $AudioStreamPlayer
+
 onready var shoot_timer = $ShootTimer
 onready var reload_timer = $ReloadTimer
+onready var sfx_timer = $SFXTimer
 
 signal death
 
@@ -29,6 +33,7 @@ func _process(delta):
 		shoot()
 	elif is_player_in_radius(vision):
 		play_anim("walk")
+		play_sfx("foot_steps")
 		move_to_player(delta)
 	else:
 		play_anim("idle")
@@ -61,6 +66,14 @@ func is_player_in_radius(radius):
 func play_anim(anim_name):
 	if anim_sprite.animation != anim_name:
 		anim_sprite.play(anim_name)
+
+func play_sfx(sfx_name):
+	if not audio.is_playing():
+		var sfx = Audio.get_random_sfx(sfx_name)
+		
+		if sfx != audio.stream:
+			audio.stream = sfx
+			audio.play()
 
 func _on_ReloadTimer_timeout():
 	clip_size = max_clip_size
