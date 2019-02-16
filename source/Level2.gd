@@ -17,3 +17,4 @@ func _on_survivepop_body_entered(body):
 		$survivepop.queue_free()
 		$Timer.start()
 		$SurviveTime.start()
+		$StaticBody2D/CollisionShape2D.disabled = false
