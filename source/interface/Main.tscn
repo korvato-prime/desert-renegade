@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://source/interface/Main.gd" type="Script" id=1]
 [ext_resource path="res://source/interface/pixel_font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://graphics/images/interface/logo.png" type="Texture" id=3]
+[ext_resource path="res://graphics/font/wasd.png" type="Texture" id=4]
+[ext_resource path="res://graphics/font/mouse.png" type="Texture" id=5]
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
@@ -28,4 +30,30 @@ text = "Press Enter to start"
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 129.397, 29.9287 )
 texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 73.6447, 143.697 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 55.471
+margin_top = 104.527
+margin_right = 95.471
+margin_bottom = 121.527
+custom_fonts/font = ExtResource( 2 )
+text = "Move"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 152.258
+margin_top = 102.981
+margin_right = 197.258
+margin_bottom = 119.981
+custom_fonts/font = ExtResource( 2 )
+text = "Shoot"
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 173.964, 141.692 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
 
