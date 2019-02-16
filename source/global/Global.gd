@@ -4,6 +4,15 @@ extends Node2D
 var Player = null
 
 # Scenes
+var Main = "res://source/interface/Main.tscn"
+var Intro = "res://source/interface/Intro.tscn"
+var Ending = "res://source/interface/Ending.tscn"
+var Level1 = "res://source/Level1.tscn"
+var Level2 = "res://source/Level2.tscn"
+var Level3 = "res://source/BossArena.tscn"
+
+
+# Projectiles
 var Needle = preload("res://source/projectiles/Needle.tscn")
 
 var Flame = preload("res://source/projectiles/Flame.tscn")

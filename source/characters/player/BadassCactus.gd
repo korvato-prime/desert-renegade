@@ -3,13 +3,15 @@ extends KinematicBody2D
 # Member variables
 const MOTION_SPEED = 160 # Pixels/second
 
-func _ready():
-	Global.Player = self
-	
 var directions = ["right", "down_right", "down", "down_left", "left", "up_left", "up", "up_right"]
 var facing = Vector2()
 
 var have_card = false
+
+onready var health_label = $HUD/Health
+
+func _ready():
+	Global.Player = self
 
 #func _physics_process(delta):
 #	var motion = Vector2()
@@ -76,7 +78,7 @@ func direction2str(direction):
 
 func _on_Level_exit_body_entered(body):
 	if have_card:
-		get_tree().change_scene("res://source/Level2.tscn")
+		get_tree().change_scene(Global.Level2)
 		print("exitlevel")
 
 func _on_Area2D_body_entered(body):
@@ -99,4 +101,4 @@ func _on_survivepop_body_entered(body):
 	get_parent().get_node("SurviveTime").start()
 
 func _on_Pyromaniac_death():
-	get_tree().change_scene("res://source/Ending.tscn")
+	get_tree().change_scene(Global.Ending)

@@ -5,7 +5,7 @@
 [ext_resource path="res://source/characters/enemies/Pyromaniac.tscn" type="PackedScene" id=3]
 [ext_resource path="res://audio/music/Intro_Boss.wav" type="AudioStream" id=4]
 
-[node name="Node2D" type="Node2D"]
+[node name="BossArena" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 mode = 1
@@ -24,4 +24,3 @@ position = Vector2( 726.617, 584.41 )
 stream = ExtResource( 4 )
 autoplay = true
 
-[connection signal="death" from="Pyromaniac" to="BadassCactus" method="_on_Pyromaniac_death"]

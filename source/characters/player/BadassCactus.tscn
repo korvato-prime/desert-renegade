@@ -1,12 +1,12 @@
 [gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://source/characters/player/BadassCactus.gd" type="Script" id=1]
-[ext_resource path="res://graphics/images/player/walking_right1.png" type="Texture" id=2]
-[ext_resource path="res://graphics/images/player/walking_right2.png" type="Texture" id=3]
-[ext_resource path="res://graphics/images/player/walking_right3.png" type="Texture" id=4]
-[ext_resource path="res://graphics/images/player/walking_left1.png" type="Texture" id=5]
-[ext_resource path="res://graphics/images/player/walking_left2.png" type="Texture" id=6]
-[ext_resource path="res://graphics/images/player/walking_left3.png" type="Texture" id=7]
+[ext_resource path="res://graphics/images/player/walking_left1.png" type="Texture" id=2]
+[ext_resource path="res://graphics/images/player/walking_left2.png" type="Texture" id=3]
+[ext_resource path="res://graphics/images/player/walking_left3.png" type="Texture" id=4]
+[ext_resource path="res://graphics/images/player/walking_right1.png" type="Texture" id=5]
+[ext_resource path="res://graphics/images/player/walking_right2.png" type="Texture" id=6]
+[ext_resource path="res://graphics/images/player/walking_right3.png" type="Texture" id=7]
 [ext_resource path="res://graphics/images/player/walking_up1.png" type="Texture" id=8]
 [ext_resource path="res://graphics/images/player/walking_up2.png" type="Texture" id=9]
 [ext_resource path="res://graphics/images/player/walking_up3.png" type="Texture" id=10]
@@ -30,18 +30,17 @@
 [ext_resource path="res://graphics/images/player/walking_downleft3.png" type="Texture" id=28]
 [ext_resource path="res://source/characters/player/Cannon.tscn" type="PackedScene" id=29]
 
-
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "right",
+"name": "left",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
-"name": "left",
+"name": "right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
@@ -86,7 +85,7 @@ radius = 4.89767
 
 [sub_resource type="RectangleShape2D" id=3]
 
-extents = Vector2( 8.02029, 15.8011 )
+extents = Vector2( 7.34091, 9.9557 )
 
 [node name="BadassCactus" type="KinematicBody2D"]
 collision_mask = 22
@@ -106,9 +105,18 @@ current = true
 [node name="Cannon" parent="." instance=ExtResource( 29 )]
 position = Vector2( -4.02683, -0.183876 )
 
-[node name="Hitbox" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( -0.0886898, 0.428059 )
+[node name="Hitbox" type="Area2D" parent="."]
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2( 0.911585, 0.120282 )
 shape = SubResource( 3 )
 disabled = true
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Health" type="Label" parent="HUD"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Health: "
 
