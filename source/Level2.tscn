@@ -651,12 +651,14 @@ position = Vector2( 2583.25, 762.024 )
 position = Vector2( 2835.88, 756.302 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( 955.751, 1382.82 )
+position = Vector2( 2872.36, 1028.83 )
+scale = Vector2( 0.995405, 0.998077 )
+collision_layer = 2
+collision_mask = 29
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 1762.95, -366.389 )
+scale = Vector2( 0.872559, 0.984418 )
 shape = SubResource( 16 )
-disabled = true
 
 [connection signal="body_entered" from="Glitch" to="." method="_on_Glitch_body_entered"]
 [connection signal="body_entered" from="survivepop" to="." method="_on_survivepop_body_entered"]
