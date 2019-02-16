@@ -1,5 +1,8 @@
 extends Enemy
 
+func _ready():
+	tex_dead = Global.tex_pyromaniac_dead
+
 func shoot():
 	
 	if shoot_timer.is_stopped() and reload_timer.is_stopped():

@@ -2,6 +2,7 @@ class_name Enemy extends KinematicBody2D
 
 var motion = Vector2(0, 0)
 var clip_size = 1
+var tex_dead = null
 var dead = false
 
 export(int) var health = 3
@@ -77,10 +78,17 @@ func play_sfx(sfx_name):
 			audio.stream = sfx
 			audio.play()
 
+func spawn_body():
+	var sprite = Sprite.new()
+	sprite.texture = tex_dead
+	get_parent().add_child(sprite)
+	sprite.global_position = global_position
+
 func _on_ReloadTimer_timeout():
 	clip_size = max_clip_size
 
 func _on_AnimatedSprite_animation_finished():
 	if anim_sprite.animation == "die":
+		spawn_body()
 		queue_free()
 	play_anim("idle")

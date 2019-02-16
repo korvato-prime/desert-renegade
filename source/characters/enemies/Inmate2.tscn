@@ -1,49 +1,51 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://source/characters/enemies/Inmate.tscn" type="PackedScene" id=1]
-[ext_resource path="res://graphics/images/enemies/inmate02.png" type="Texture" id=2]
-[ext_resource path="res://graphics/images/enemies/inmate02_walking1.png" type="Texture" id=3]
-[ext_resource path="res://graphics/images/enemies/inmate02_walking2.png" type="Texture" id=4]
-[ext_resource path="res://graphics/images/enemies/inmate02_walking3.png" type="Texture" id=5]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying1.png" type="Texture" id=6]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying2.png" type="Texture" id=7]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying3.png" type="Texture" id=8]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying4.png" type="Texture" id=9]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying5.png" type="Texture" id=10]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying6.png" type="Texture" id=11]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying7.png" type="Texture" id=12]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying8.png" type="Texture" id=13]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying9.png" type="Texture" id=14]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying10.png" type="Texture" id=15]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying11.png" type="Texture" id=16]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying12.png" type="Texture" id=17]
-[ext_resource path="res://graphics/images/enemies/inmate002_dying13.png" type="Texture" id=18]
+[ext_resource path="res://source/characters/enemies/Inmate2.gd" type="Script" id=2]
+[ext_resource path="res://graphics/images/enemies/inmate02.png" type="Texture" id=3]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying1.png" type="Texture" id=4]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying2.png" type="Texture" id=5]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying3.png" type="Texture" id=6]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying4.png" type="Texture" id=7]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying5.png" type="Texture" id=8]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying6.png" type="Texture" id=9]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying7.png" type="Texture" id=10]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying8.png" type="Texture" id=11]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying9.png" type="Texture" id=12]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying10.png" type="Texture" id=13]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying11.png" type="Texture" id=14]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying12.png" type="Texture" id=15]
+[ext_resource path="res://graphics/images/enemies/inmate002_dying13.png" type="Texture" id=16]
+[ext_resource path="res://graphics/images/enemies/inmate02_walking1.png" type="Texture" id=17]
+[ext_resource path="res://graphics/images/enemies/inmate02_walking2.png" type="Texture" id=18]
+[ext_resource path="res://graphics/images/enemies/inmate02_walking3.png" type="Texture" id=19]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "shoot",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "die",
 "speed": 5.0
 } ]
 
 [node name="Inmate2" index="0" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
 
 [node name="AnimatedSprite" parent="." index="2"]
 frames = SubResource( 1 )

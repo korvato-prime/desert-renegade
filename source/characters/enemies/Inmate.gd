@@ -1,5 +1,8 @@
 extends Enemy
 
+func _ready():
+	tex_dead = Global.tex_inmate1_dead
+
 var projectiles = [
 	Global.Bottle,
 	Global.Brush,

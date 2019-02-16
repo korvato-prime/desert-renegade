@@ -29,8 +29,10 @@ var MysteryBullet = preload("res://source/projectiles/MysteryBullet.tscn")
 var Fire = preload("res://source/items/Fire.tscn")
 
 # Resources
-var tex_inmate1 = preload("res://graphics/images/enemies/inmate.png")
-var tex_inmate2 = preload("res://graphics/images/enemies/inmate02.png")
+var tex_inmate1_dead = preload("res://graphics/images/enemies/inmate01_diying10.png")
+var tex_inmate2_dead = preload("res://graphics/images/enemies/inmate002_dying13.png")
+var tex_cop_dead = preload("res://graphics/images/enemies/cop_dying15.png")
+var tex_pyromaniac_dead = preload("res://graphics/images/enemies/pyromaniac_death12.png")
 
 # Global.tscn
 
