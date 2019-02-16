@@ -77,6 +77,7 @@ func direction2str(direction):
 func _on_Level_exit_body_entered(body):
 	if have_card:
 		get_tree().change_scene("res://source/Level2.tscn")
+		print("exitlevel")
 
 func _on_Area2D_body_entered(body):
 	have_card = true

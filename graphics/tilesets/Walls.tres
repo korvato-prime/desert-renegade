@@ -2,8 +2,6 @@
 
 [ext_resource path="res://graphics/images/items/tileset_atlas.png" type="Texture" id=1]
 
-
-
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 points = PoolVector2Array( 31.6684, 31.2808, 63.4527, 46.7853, 30.6994, 63.4527, 1.24078, 48.7234 )
@@ -38,7 +36,7 @@ points = PoolVector2Array( 32.7979, 30.9915, 62.135, 15.7202, 62.5369, 46.2629, 
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 
-points = PoolVector2Array( 28.8137, 33.0171, 62.6383, 49.0922, 30.4882, 62.4881, 0.0124359, 49.0922 )
+points = PoolVector2Array( 1.23146, 46.7346, 1.23146, 33.7137, 27.7554, 16.8349, 61.5131, 33.2315, 60.5486, 48.6636, 30.1666, 63.1312, 1.23146, 50.1103 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
 
@@ -52,7 +50,7 @@ points = PoolVector2Array( 32.0936, 31.9779, 62.9042, 16.2377, 63.574, 46.7135, 
 
 points = PoolVector2Array( 31.7932, 31.3082, 63.2737, 15.5679, 63.9435, 46.3786, 32.463, 62.1188 )
 
-[sub_resource type="ConvexPolygonShape2D" id=15]
+[sub_resource type="ConvexPolygonShape2D" id=13]
 
 points = PoolVector2Array( 0.65432, 15.8656, 32.051, -0.414154, 62.5174, 14.2376, 62.75, 47.2623, 31.8184, 63.3095, -0.0433884, 47.4949 )
 
@@ -186,7 +184,7 @@ points = PoolVector2Array( 66.196, 5.05785, 91.7554, 17.5964, 44.4946, 45.0849, 
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 15 ),
+"shape": SubResource( 13 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 8/z_index = 0
