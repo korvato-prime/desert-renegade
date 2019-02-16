@@ -2,6 +2,7 @@ class_name Enemy extends KinematicBody2D
 
 var motion = Vector2(0, 0)
 var clip_size = 1
+var dead = false
 
 export(int) var health = 3
 export(int) var speed = 100
@@ -27,15 +28,16 @@ func _ready():
 	reload_timer.wait_time = reload_time
 
 func _process(delta):
-	update()
-	
-	if is_player_in_radius(attack_range):
-		shoot()
-	elif is_player_in_radius(vision):
-		play_anim("walk")
-		move_to_player(delta)
-	else:
-		play_anim("idle")
+	if not dead:
+		update()
+		
+		if is_player_in_radius(attack_range):
+			shoot()
+		elif is_player_in_radius(vision):
+			play_anim("walk")
+			move_to_player(delta)
+		else:
+			play_anim("idle")
 
 func _draw():
 	draw_circle(to_local(global_position), attack_range, Color("20ff0000"))
@@ -45,7 +47,8 @@ func hurt():
 	health -= 1
 	anim.play("hurt")
 	if health == 0:
-		queue_free()
+		dead = true
+		play_anim("die")
 		emit_signal("death")
 
 func move_to_player(delta):
@@ -78,4 +81,6 @@ func _on_ReloadTimer_timeout():
 	clip_size = max_clip_size
 
 func _on_AnimatedSprite_animation_finished():
+	if anim_sprite.animation == "die":
+		queue_free()
 	play_anim("idle")
