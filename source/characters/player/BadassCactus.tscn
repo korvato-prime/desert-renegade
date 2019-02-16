@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://source/characters/player/BadassCactus.gd" type="Script" id=1]
 [ext_resource path="res://graphics/images/player/walking_left1.png" type="Texture" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://graphics/images/player/walking_downleft2.png" type="Texture" id=27]
 [ext_resource path="res://graphics/images/player/walking_downleft3.png" type="Texture" id=28]
 [ext_resource path="res://source/characters/player/Cannon.tscn" type="PackedScene" id=29]
+[ext_resource path="res://graphics/images/items/security_card.png" type="Texture" id=30]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -101,6 +102,8 @@ shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
 
 [node name="Cannon" parent="." instance=ExtResource( 29 )]
 position = Vector2( -4.02683, -0.183876 )
@@ -119,4 +122,16 @@ disabled = true
 margin_right = 40.0
 margin_bottom = 14.0
 text = "Health: "
+
+[node name="Keycard" type="Container" parent="HUD"]
+visible = false
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -32.0
+margin_right = 32.0
+
+[node name="Sprite" type="Sprite" parent="HUD/Keycard"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 30 )
+centered = false
 

@@ -9,6 +9,7 @@ var facing = Vector2()
 var have_card = false
 
 onready var health_label = $HUD/Health
+onready var keycard = $HUD/Keycard
 
 func _ready():
 	Global.Player = self
@@ -76,15 +77,18 @@ func direction2str(direction):
     var index = round(angle / PI * 4)
     return directions[index]
 
+func add_keycard():
+	keycard.visible = true
+	have_card = true
+	
+func remove_keycard():
+	keycard.visible = false
+	have_card = false
+
 func _on_Level_exit_body_entered(body):
 	if have_card:
 		get_tree().change_scene(Global.Level2)
 		print("exitlevel")
-
-func _on_Area2D_body_entered(body):
-	have_card = true
-	$Keycard2.visible = true
-	get_parent().get_node("Keycard").visible = false
 
 func _on_Glitch_body_entered(body):
 	get_parent().get_node("CanvasLayer/ParallaxBackground/TextureRect").visible = true

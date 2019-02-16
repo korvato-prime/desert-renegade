@@ -45,13 +45,10 @@ tile_data = PoolIntArray( -1507265, 536870926, 0, -1507264, 536870926, 0, -15072
 position = Vector2( 1038.51, 1339.55 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-editor/display_folded = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="CanvasLayer"]
-editor/display_folded = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/ParallaxBackground"]
-visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 5 )
@@ -265,7 +262,6 @@ texture = ExtResource( 8 )
 wait_time = 60.0
 one_shot = true
 
-[connection signal="body_entered" from="Glitch" to="BadassCactus" method="_on_Glitch_body_entered"]
 [connection signal="body_entered" from="survivepop" to="BadassCactus" method="_on_survivepop_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="SurviveTime" to="." method="_on_SurviveTime_timeout"]
