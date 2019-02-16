@@ -49,6 +49,7 @@ position = Vector2( 1038.51, 1339.55 )
 [node name="ParallaxBackground" type="ParallaxBackground" parent="CanvasLayer"]
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/ParallaxBackground"]
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 5 )
@@ -235,6 +236,7 @@ shape = SubResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
+volume_db = -15.0
 autoplay = true
 
 [node name="survivepop" type="Area2D" parent="."]
@@ -247,6 +249,7 @@ shape = SubResource( 2 )
 [node name="Timer" type="Timer" parent="."]
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
+editor/display_folded = true
 
 [node name="Control" type="Control" parent="CanvasLayer2"]
 anchor_right = 1.0
@@ -262,6 +265,8 @@ texture = ExtResource( 8 )
 wait_time = 60.0
 one_shot = true
 
+[connection signal="body_entered" from="Glitch" to="." method="_on_Glitch_body_entered"]
+[connection signal="body_entered" from="survivepop" to="." method="_on_survivepop_body_entered"]
 [connection signal="body_entered" from="survivepop" to="BadassCactus" method="_on_survivepop_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="SurviveTime" to="." method="_on_SurviveTime_timeout"]

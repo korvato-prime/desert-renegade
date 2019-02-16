@@ -14,27 +14,6 @@ onready var keycard = $HUD/Keycard
 func _ready():
 	Global.Player = self
 
-#func _physics_process(delta):
-#	var motion = Vector2()
-	
-#	if Input.is_action_pressed("w"):
-#		motion += Vector2(0, -1)
-#		$Sprite.play("up")
-#	if Input.is_action_pressed("a") and Input.is_action_pressed("w"):
-#		$Sprite.play("up_left")
-#	if Input.is_action_pressed("s"):
-#		motion += Vector2(0, 1)
-#		$Sprite.play("down")
-#	if Input.is_action_pressed("a"):
-#		motion += Vector2(-1, 0)
-#		$Sprite.play("left")
-#	if Input.is_action_pressed("d"):
-#		motion += Vector2(1, 0)
-#		$Sprite.play("right")
-#	motion = motion.normalized() * MOTION_SPEED
-
-#	move_and_slide(motion)
-
 func _physics_process(delta):
 	var move_direction = Vector2()
 	var motion = Vector2()	
@@ -84,25 +63,3 @@ func add_keycard():
 func remove_keycard():
 	keycard.visible = false
 	have_card = false
-
-func _on_Level_exit_body_entered(body):
-	if have_card:
-		get_tree().change_scene(Global.Level2)
-		print("exitlevel")
-
-func _on_Glitch_body_entered(body):
-	get_parent().get_node("CanvasLayer/ParallaxBackground/TextureRect").visible = true
-	get_parent().get_node("AudioStreamPlayer").playing = false 
-
-func _on_Glitch_area_entered(area):
-	get_parent().get_node("CanvasLayer/ParallaxBackground/TextureRect").visible = true
-	get_parent().get_node("AudioStreamPlayer").playing = false 
-
-func _on_survivepop_body_entered(body):
-	get_parent().get_node("CanvasLayer2/Control/TextureRect").visible = true
-	get_parent().get_node("survivepop").queue_free()
-	get_parent().get_node("Timer").start()
-	get_parent().get_node("SurviveTime").start()
-
-func _on_Pyromaniac_death():
-	get_tree().change_scene(Global.Ending)
