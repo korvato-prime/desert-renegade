@@ -95,4 +95,6 @@ func _on_survivepop_body_entered(body):
 	get_parent().get_node("CanvasLayer2/Control/TextureRect").visible = true
 	get_parent().get_node("survivepop").queue_free()
 	get_parent().get_node("Timer").start()
+	get_parent().get_node("SurviveTime").start()
+	
 	
