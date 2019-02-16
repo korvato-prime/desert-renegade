@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Tittle" type="Label" parent="."]
+margin_left = 55.2132
+margin_top = 21.847
+margin_right = 196.213
+margin_bottom = 52.847
+text = "SHARPFIST BREAKOUT
+"
+
+[node name="Start" type="Label" parent="."]
+margin_left = 67.1297
+margin_top = 117.179
+margin_right = 189.13
+margin_bottom = 131.179
+text = "Press Enter to start"
+

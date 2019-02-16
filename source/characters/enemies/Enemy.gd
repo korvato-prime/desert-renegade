@@ -16,6 +16,8 @@ onready var anim = $AnimationPlayer
 onready var shoot_timer = $ShootTimer
 onready var reload_timer = $ReloadTimer
 
+signal death
+
 func _ready():
 	shoot_timer.wait_time = shoot_time
 	reload_timer.wait_time = reload_time
@@ -38,6 +40,7 @@ func hurt():
 	anim.play("hurt")
 	if health == 0:
 		queue_free()
+		emit_signal("death")
 
 func move_to_player(delta):
 	var direction = (Global.Player.global_position - global_position).normalized()

@@ -97,5 +97,6 @@ func _on_survivepop_body_entered(body):
 	get_parent().get_node("survivepop").queue_free()
 	get_parent().get_node("Timer").start()
 	get_parent().get_node("SurviveTime").start()
-	
-	
+
+func _on_Pyromaniac_death():
+	get_tree().change_scene("res://source/Ending.tscn")

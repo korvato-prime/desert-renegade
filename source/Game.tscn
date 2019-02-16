@@ -242,7 +242,7 @@ volume_db = -15.0
 autoplay = true
 
 [node name="Badass_Cactus" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1368.2, 735.231 )
+position = Vector2( 184.647, -1.41721 )
 z_index = 1
 
 [node name="Keycard2" type="Sprite" parent="Badass_Cactus"]
