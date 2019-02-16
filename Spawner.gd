@@ -1,10 +1,8 @@
 extends Position2D
 
 export (PackedScene) var spawnScene
-onready var spawnReference = load (spawnScene.get_path())
 
-export (NodePath) var timerPath
-onready var timerNode = get_node(timerPath)
+onready var timerNode = $Timer
 
 export (float) var minWaitTime 
 export (float) var maxWaitTime 
@@ -12,14 +10,16 @@ export (float) var maxWaitTime
 func _ready():
 	randomize()
 	timerNode.set_wait_time(rand_range(minWaitTime, maxWaitTime))
-	timerNode.start()
 	$AnimationPlayer.play()
 
+func start():
+	timerNode.start()
+
 func _on_Timer_timeout():
-	var spawnInstance = spawnReference.instance()
+	var spawnInstance = spawnScene.instance()
 	
 	get_parent().add_child(spawnInstance)
-	spawnInstance.position = position
+	spawnInstance.global_position = global_position + Vector2(randi() % 40, randi() % 40)
 	
 	timerNode.set_wait_time(rand_range(minWaitTime, maxWaitTime))
 	timerNode.start()

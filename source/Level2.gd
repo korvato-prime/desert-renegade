@@ -17,4 +17,6 @@ func _on_survivepop_body_entered(body):
 		$survivepop.queue_free()
 		$Timer.start()
 		$SurviveTime.start()
+		$Enemies/Spawner.start()
+		$Enemies/Spawner2.start()
 		$StaticBody2D.position = Vector2(2720, 1026)

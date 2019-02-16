@@ -25,7 +25,6 @@ tracks/0/keys = {
 position = Vector2( 139.414, 114.751 )
 script = ExtResource( 1 )
 spawnScene = ExtResource( 2 )
-timerPath = NodePath("Timer")
 minWaitTime = 5.0
 maxWaitTime = 8.0
 

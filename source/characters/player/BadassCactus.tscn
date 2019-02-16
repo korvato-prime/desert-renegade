@@ -19,15 +19,15 @@
 [ext_resource path="res://graphics/images/player/walking_upleft1.png" type="Texture" id=17]
 [ext_resource path="res://graphics/images/player/walking_upleft2.png" type="Texture" id=18]
 [ext_resource path="res://graphics/images/player/walking_upleft3.png" type="Texture" id=19]
-[ext_resource path="res://graphics/images/player/walking_down1.png" type="Texture" id=20]
-[ext_resource path="res://graphics/images/player/walking_down2.png" type="Texture" id=21]
-[ext_resource path="res://graphics/images/player/walking_down3.png" type="Texture" id=22]
-[ext_resource path="res://graphics/images/player/walking_downright1.png" type="Texture" id=23]
-[ext_resource path="res://graphics/images/player/walking_downright2.png" type="Texture" id=24]
-[ext_resource path="res://graphics/images/player/walking_downright3.png" type="Texture" id=25]
-[ext_resource path="res://graphics/images/player/walking_downleft1.png" type="Texture" id=26]
-[ext_resource path="res://graphics/images/player/walking_downleft2.png" type="Texture" id=27]
-[ext_resource path="res://graphics/images/player/walking_downleft3.png" type="Texture" id=28]
+[ext_resource path="res://graphics/images/player/walking_downright1.png" type="Texture" id=20]
+[ext_resource path="res://graphics/images/player/walking_downright2.png" type="Texture" id=21]
+[ext_resource path="res://graphics/images/player/walking_downright3.png" type="Texture" id=22]
+[ext_resource path="res://graphics/images/player/walking_downleft1.png" type="Texture" id=23]
+[ext_resource path="res://graphics/images/player/walking_downleft2.png" type="Texture" id=24]
+[ext_resource path="res://graphics/images/player/walking_downleft3.png" type="Texture" id=25]
+[ext_resource path="res://graphics/images/player/walking_down1.png" type="Texture" id=26]
+[ext_resource path="res://graphics/images/player/walking_down2.png" type="Texture" id=27]
+[ext_resource path="res://graphics/images/player/walking_down3.png" type="Texture" id=28]
 [ext_resource path="res://source/characters/player/Cannon.tscn" type="PackedScene" id=29]
 [ext_resource path="res://graphics/images/items/security_card.png" type="Texture" id=30]
 
@@ -66,17 +66,17 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
 "loop": true,
-"name": "down",
+"name": "down_right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
 "loop": true,
-"name": "down_right",
+"name": "down_left",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
 "loop": true,
-"name": "down_left",
+"name": "down",
 "speed": 5.0
 } ]
 
