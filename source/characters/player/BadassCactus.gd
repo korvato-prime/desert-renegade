@@ -82,3 +82,17 @@ func _on_Area2D_body_entered(body):
 	have_card = true
 	$Keycard2.visible = true
 	get_parent().get_node("Keycard").visible = false
+
+func _on_Glitch_body_entered(body):
+	get_parent().get_node("CanvasLayer/ParallaxBackground/TextureRect").visible = true
+	get_parent().get_node("AudioStreamPlayer").playing = false 
+
+func _on_Glitch_area_entered(area):
+	get_parent().get_node("CanvasLayer/ParallaxBackground/TextureRect").visible = true
+	get_parent().get_node("AudioStreamPlayer").playing = false 
+
+func _on_survivepop_body_entered(body):
+	get_parent().get_node("CanvasLayer2/Control/TextureRect").visible = true
+	get_parent().get_node("survivepop").queue_free()
+	get_parent().get_node("Timer").start()
+	
