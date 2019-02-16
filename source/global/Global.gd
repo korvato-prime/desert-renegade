@@ -29,3 +29,19 @@ var Fire = preload("res://source/items/Fire.tscn")
 # Resources
 var tex_inmate1 = preload("res://graphics/images/enemies/inmate.png")
 var tex_inmate2 = preload("res://graphics/images/enemies/inmate02.png")
+
+# Global.tscn
+
+var next_scene = null
+
+onready var anim = $AnimationPlayer
+
+func change_scene(scene):
+	next_scene = scene
+	anim.play("fade_out")
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	if anim_name == "fade_out":
+		get_tree().change_scene(next_scene)
+		anim.play("fade_in")
+		next_scene = null

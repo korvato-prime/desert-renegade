@@ -2,7 +2,7 @@
 
 [ext_resource path="res://graphics/images/glitch.png" type="Texture" id=1]
 
-[node name="Node2D" type="Node2D"]
+[node name="Ending" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 40.0

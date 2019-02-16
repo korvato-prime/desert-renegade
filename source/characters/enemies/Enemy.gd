@@ -11,7 +11,7 @@ export(int) var max_clip_size = 1
 export(float) var shoot_time = 1
 export(float) var reload_time = 1
 
-onready var anim = $AnimationPlayer
+onready var hurt_anim = $HurtAnimationPlayer
 
 onready var shoot_timer = $ShootTimer
 onready var reload_timer = $ReloadTimer
@@ -37,7 +37,7 @@ func _draw():
 	
 func hurt():
 	health -= 1
-	anim.play("hurt")
+	hurt_anim.play("hurt")
 	if health == 0:
 		queue_free()
 		emit_signal("death")
