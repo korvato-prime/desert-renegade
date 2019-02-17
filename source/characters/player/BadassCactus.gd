@@ -62,11 +62,15 @@ func direction2str(direction):
     var index = round(angle / PI * 4)
     return directions[index]
 
+func heal(value):
+	health += value
+	health_label.text = "Health: " + str(health)
+
 func hurt():
 	health -= 1
 	health_label.text = "Health: " + str(health)
 	if health == 0:
-		Global.change_scene(Global.GameOver)
+		get_tree().reload_current_scene()
 
 func add_keycard():
 	keycard.visible = true
