@@ -89,6 +89,7 @@ radius = 4.89767
 extents = Vector2( 7.34091, 9.9557 )
 
 [node name="BadassCactus" type="KinematicBody2D"]
+position = Vector2( -1.92307, -0.34964 )
 collision_mask = 86
 script = ExtResource( 1 )
 

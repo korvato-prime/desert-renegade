@@ -51,6 +51,9 @@ func hurt():
 		dead = true
 		play_anim("die")
 		emit_signal("death")
+		play_sfx("enemy_die")
+	else:
+		play_sfx("enemy_hurt")
 
 func move_to_player(delta):
 	var direction = (Global.Player.global_position - global_position).normalized()
