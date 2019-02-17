@@ -5,7 +5,7 @@
 [ext_resource path="res://source/characters/player/BadassCactus.tscn" type="PackedScene" id=3]
 [ext_resource path="res://source/characters/enemies/Cop.tscn" type="PackedScene" id=4]
 [ext_resource path="res://source/characters/enemies/Inmate.tscn" type="PackedScene" id=5]
-[ext_resource path="res://source/characters/enemies/Pyromaniac.tscn" type="PackedScene" id=6]
+[ext_resource path="res://source/characters/enemies/Inmate2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://graphics/tilesets/Floor.tres" type="TileSet" id=7]
 [ext_resource path="res://graphics/tilesets/Walls.tres" type="TileSet" id=8]
 [ext_resource path="res://graphics/images/items/tileset_atlas.png" type="Texture" id=9]
@@ -246,7 +246,6 @@ position = Vector2( 162.605, -2.521 )
 z_index = 1
 
 [node name="Enemies" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Cop" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 763.757, -221.262 )
@@ -254,16 +253,56 @@ position = Vector2( 763.757, -221.262 )
 [node name="Cop2" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 915.185, -125.7 )
 
+[node name="Cop3" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1186.95, 845.878 )
+
+[node name="Cop4" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 2373.14, 866.873 )
+
+[node name="Cop5" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 2462.95, 816.719 )
+
+[node name="Cop6" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1392.23, 404.994 )
+
 [node name="Inmate" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 887.252, -303.592 )
 
 [node name="Inmate2" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1111.45, -172.011 )
 
-[node name="Pyromaniac" parent="Enemies" instance=ExtResource( 6 )]
-position = Vector2( 1653.21, 405.034 )
-speed = 60
-attack_range = 60
+[node name="Inmate6" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1683.2, -40.1539 )
+
+[node name="Inmate7" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1241.09, 126.052 )
+
+[node name="Inmate8" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1116.99, 153.754 )
+
+[node name="Inmate10" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 2153.89, 544.484 )
+
+[node name="Inmate11" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1914.78, 664.619 )
+
+[node name="Inmate3" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 775.63, 69.8067 )
+
+[node name="Inmate4" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 1029.37, -268.146 )
+
+[node name="Inmate5" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 1590.04, -84.2113 )
+
+[node name="Inmate12" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 1658.86, 423.156 )
+
+[node name="Inmate13" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 1658.86, 423.156 )
+
+[node name="Inmate9" parent="Enemies" instance=ExtResource( 6 )]
+position = Vector2( 1185.04, 124.79 )
 
 [node name="floor" type="TileMap" parent="."]
 mode = 1
