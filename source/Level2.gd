@@ -9,7 +9,7 @@ func _on_Timer_timeout():
 	$CanvasLayer2/Control/TextureRect.visible = false
 
 func _on_SurviveTime_timeout():
-	Global.change_scene("res://source/BossArena.tscn")
+	Global.change_scene("res://source/Intermission.tscn")
 
 func _on_survivepop_body_entered(body):
 	if body == Global.Player:
