@@ -12,6 +12,9 @@ var health
 
 export(int) var max_health = 10
 
+onready var audio = $AudioStreamPlayer
+onready var anim = $AnimationPlayer
+
 onready var health_label = $HUD/Health
 onready var keycard = $HUD/Keycard
 
@@ -62,8 +65,16 @@ func direction2str(direction):
     var index = round(angle / PI * 4)
     return directions[index]
 
+func play_sfx(sfx_name):
+	if not audio.is_playing():
+		var sfx = Audio.get_random_sfx(sfx_name)
+		if sfx != audio.stream:
+			audio.stream = sfx
+			audio.play()
+
 func heal(value):
 	health += value
+	anim.play("heal")
 	health_label.text = "Health: " + str(health)
 
 func hurt():
@@ -71,6 +82,10 @@ func hurt():
 	health_label.text = "Health: " + str(health)
 	if health == 0:
 		get_tree().reload_current_scene()
+		play_sfx("enemy_die")
+	else:
+		anim.play("hurt")
+		play_sfx("enemy_hurt")
 
 func add_keycard():
 	keycard.visible = true
