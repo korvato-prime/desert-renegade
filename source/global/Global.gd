@@ -40,6 +40,9 @@ var next_scene = null
 
 onready var anim = $AnimationPlayer
 
+func play_pickup():
+	$AudioStreamPlayer.play()
+
 func change_scene(scene):
 	next_scene = scene
 	anim.play("fade_out")
