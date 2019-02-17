@@ -26,7 +26,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Desert Renegade"
+config/name="Sharpfist Breakout"
 run/main_scene="res://source/interface/Main.tscn"
 config/icon="res://icon.png"
 
@@ -39,6 +39,7 @@ Audio="*res://source/global/Audio.gd"
 
 window/size/width=256
 window/size/height=240
+window/size/fullscreen=true
 window/size/test_width=512
 window/size/test_height=480
 mouse_cursor/custom_image="res://graphics/images/interface/mouselook.png"

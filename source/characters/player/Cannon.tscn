@@ -4,8 +4,6 @@
 [ext_resource path="res://graphics/images/items/gun_arm.png" type="Texture" id=2]
 [ext_resource path="res://audio/sfx/pump_shotgun.wav" type="AudioStream" id=3]
 
-
-
 [node name="Cannon" type="Node2D"]
 position = Vector2( 112.149, 73.4066 )
 script = ExtResource( 1 )
@@ -23,6 +21,6 @@ autostart = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
-volume_db = -10.0
+volume_db = -15.0
 
 [connection signal="timeout" from="GunTimer" to="." method="_on_GunTimer_timeout"]
