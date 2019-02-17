@@ -114,7 +114,6 @@ jump={
 2d_physics/layer_4="PlayerProjectiles"
 2d_physics/layer_5="EnemyProjectiles"
 2d_physics/layer_6="Jumping"
-2d_physics/layer_7="Collectibles"
 
 [rendering]
 
