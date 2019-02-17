@@ -26,7 +26,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Desert Renegade"
+config/name="Sharpfist"
 run/main_scene="res://source/interface/Main.tscn"
 config/icon="res://icon.png"
 
