@@ -46,7 +46,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Pyromaniac" index="0" instance=ExtResource( 1 )]
+[node name="Pyromaniac" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 health = 50
 vision = 250

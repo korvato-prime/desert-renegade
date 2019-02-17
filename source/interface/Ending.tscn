@@ -12,10 +12,16 @@ margin_bottom = 40.0
 texture = ExtResource( 1 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 49.6602
-margin_top = 62.6109
-margin_right = 206.66
-margin_bottom = 164.611
+margin_left = 13.0
+margin_top = 12.0
+margin_right = 245.0
+margin_bottom = 230.0
 custom_fonts/normal_font = ExtResource( 2 )
-text = "Im here Rebecca, i promised you ill be here today, and i did, I love you."
+text = "Finally that the last one, my body is in pain, i dont know if im gonna make it after this but i need to see her, i promised to her ill be there today.
+
+Afer reaching Rebeccas home, sharpfist falls in the front door hurt and bathed in blood, rebbeca came out, Jhon? What happened to you? How did you get here? You are covered in blood!
+
+Rebeca... I pormised you ill be here for valentines day... I love you.
+
+After a moment sharpfist dies."
 
