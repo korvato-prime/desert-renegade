@@ -14,11 +14,11 @@ margin_bottom = 194.0
 custom_fonts/normal_font = ExtResource( 2 )
 text = "2 hours later...
 
-Finally I made all this sucker eat dust and im out of the perimeter, nut i had to cross path with the ultimate asshole...
+Finally I made all this suckers eat dust and I'm almost out of this prison, but I had to cross path with the ultimate asshole...
 
 Pyromaniac!!!
 
-Remember me Sharpfist? You always getting in the way, you think you are some kind of hero, you are the same shit as us, i will never forget the day you put me in this rathole, I wont let you out, come and die!!"
+\"Remember me Sharpfist? You always getting in the way, you think you are some kind of hero, you are the same shit as us, i will never forget the day you put me in this rathole, I wont let you out, come and die!!\""
 
 [node name="Button" type="Button" parent="."]
 margin_left = 162.147

@@ -12,7 +12,7 @@ margin_top = 10.0
 margin_right = 246.0
 margin_bottom = 191.0
 custom_fonts/normal_font = ExtResource( 2 )
-text = "I once was the sworn protector of Desert city, I was a vigilante they used to call me \"Sharpfist\", making sure the night was secure and that all the scums of the night keeped at line, I love my city and i keep it secure until the day my sidekick \"Iguana boy\" betrayed me, the bastard sold himself to the gangs. I dont care about any of this anymore. Today i care about the supervised compassionate leave i asked and was denied, I have exemplary conduct but was denied, today im out of this shithole."
+text = "I once was the sworn protector of Desert City, I was a vigilanty and they used to call me \"Sharpfist\", making sure the night was secure and that all the scums of the night keeped at line, I love my city and i keep it secure until the day my sidekick \"Iguana Boy\" betrayed me, the bastard sold himself to the gangs. I dont care about any of this anymore. Today I care about the supervised compassionate leave I asked and was denied, I have exemplary conduct but was denied, today im out of this shithole."
 
 [node name="Button" type="Button" parent="."]
 margin_left = 166.77
