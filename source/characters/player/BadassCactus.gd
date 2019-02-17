@@ -8,20 +8,19 @@ var facing = Vector2()
 
 var have_card = false
 
-var health
+var health setget _set_health
 
-export(int) var max_health = 10
+export(int) var max_health = 12
 
 onready var audio = $AudioStreamPlayer
 onready var anim = $AnimationPlayer
 
-onready var health_label = $HUD/Health
+onready var life_bar = $HUD/LifeBar
 onready var keycard = $HUD/Keycard
 
 func _ready():
 	Global.Player = self
-	health = max_health
-	health_label.text = "Health: " + str(health)
+	_set_health(max_health)
 
 func _physics_process(delta):
 	var move_direction = Vector2()
@@ -73,20 +72,24 @@ func play_sfx(sfx_name):
 			audio.play()
 
 func heal(value):
-	health += value
+	_set_health(health + value)
 	anim.play("heal")
-	health_label.text = "Health: " + str(health)
 
 func hurt():
-	health -= 1
-	health_label.text = "Health: " + str(health)
-	if health == 0:
+	_set_health(health - 1)
+	if health <= 0:
 		get_tree().reload_current_scene()
 		play_sfx("enemy_die")
 	else:
 		anim.play("hurt")
 		play_sfx("enemy_hurt")
 
+func _set_health(value):
+	health = value
+	if health > 12:
+		health = 12
+	life_bar.value = health
+	
 func add_keycard():
 	keycard.visible = true
 	have_card = true
