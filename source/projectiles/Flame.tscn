@@ -4,14 +4,13 @@
 [ext_resource path="res://source/projectiles/Flame.gd" type="Script" id=2]
 [ext_resource path="res://graphics/images/bullets/fireball.png" type="Texture" id=3]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 
 extents = Vector2( 2.90497, 3.01148 )
 
 [node name="Flame" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-lifetime = 0.4
+lifetime = 0.6
 
 [node name="Sprite" parent="." index="0"]
 rotation = 0.0

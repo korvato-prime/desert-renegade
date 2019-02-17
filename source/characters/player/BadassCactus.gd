@@ -81,7 +81,7 @@ func hurt():
 	health -= 1
 	health_label.text = "Health: " + str(health)
 	if health == 0:
-		get_tree().reload_current_scene()
+		Global.change_scene(Global.Level1)
 		play_sfx("enemy_die")
 	else:
 		anim.play("hurt")
