@@ -32,7 +32,6 @@ func fire():
 func _on_Projectile_body_entered(body):
 	if body == Global.Player:
 		body.hurt()
-	print(body.name)
 	queue_free()
 
 func _on_LifeTimer_timeout():
