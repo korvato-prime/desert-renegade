@@ -246,6 +246,7 @@ position = Vector2( 162.605, -2.521 )
 z_index = 1
 
 [node name="Enemies" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="Cop" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 763.757, -221.262 )
