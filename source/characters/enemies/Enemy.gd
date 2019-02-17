@@ -30,7 +30,7 @@ func _ready():
 
 func _process(delta):
 	if not dead:
-		# update()
+		update()
 		
 		if is_player_in_radius(attack_range):
 			shoot()
@@ -40,9 +40,9 @@ func _process(delta):
 		else:
 			play_anim("idle")
 
-#func _draw():
-#	draw_circle(to_local(global_position), attack_range, Color("20ff0000"))
-#	draw_circle(to_local(global_position), vision, Color("200000ff"))
+func _draw():
+	draw_circle(to_local(global_position), attack_range, Color("20ff0000"))
+	draw_circle(to_local(global_position), vision, Color("200000ff"))
 	
 func hurt():
 	health -= 1
