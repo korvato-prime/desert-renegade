@@ -4,7 +4,6 @@
 [ext_resource path="res://graphics/images/items/bottle.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-
 extents = Vector2( 4.97979, 2.99787 )
 
 [node name="Projectile" type="Area2D"]

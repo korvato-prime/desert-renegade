@@ -3,10 +3,7 @@
 [ext_resource path="res://source/projectiles/Needle.gd" type="Script" id=1]
 [ext_resource path="res://graphics/images/items/needle.png" type="Texture" id=2]
 
-
-
 [sub_resource type="CircleShape2D" id=1]
-
 radius = 3.30287
 
 [node name="Needle" type="Area2D"]
