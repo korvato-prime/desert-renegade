@@ -1,9 +1,12 @@
 extends Node2D
 
+func _ready():
+	Global.looper.play_set(Global.looper.level2)
+
 func _on_Glitch_body_entered(body):
 	if body == Global.Player:
 		$CanvasLayer/ParallaxBackground/TextureRect.visible = true
-		$AudioStreamPlayer.playing = false 
+		Global.looper.stop()
 
 func _on_Timer_timeout():
 	$CanvasLayer2/Control/TextureRect.visible = false

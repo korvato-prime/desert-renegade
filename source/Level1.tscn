@@ -1,59 +1,48 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://source/Level1.gd" type="Script" id=1]
-[ext_resource path="res://audio/music/Level2_Loop.wav" type="AudioStream" id=2]
-[ext_resource path="res://source/characters/player/BadassCactus.tscn" type="PackedScene" id=3]
-[ext_resource path="res://source/characters/enemies/Cop.tscn" type="PackedScene" id=4]
-[ext_resource path="res://source/characters/enemies/Inmate.tscn" type="PackedScene" id=5]
-[ext_resource path="res://source/characters/enemies/Inmate2.tscn" type="PackedScene" id=6]
-[ext_resource path="res://graphics/tilesets/Floor.tres" type="TileSet" id=7]
-[ext_resource path="res://graphics/tilesets/Walls.tres" type="TileSet" id=8]
-[ext_resource path="res://graphics/images/items/tileset_atlas.png" type="Texture" id=9]
-[ext_resource path="res://source/items/Keycard.tscn" type="PackedScene" id=10]
-[ext_resource path="res://source/interface/pixel_font.tres" type="DynamicFont" id=11]
-[ext_resource path="res://graphics/images/exit_sign.png" type="Texture" id=12]
-[ext_resource path="res://source/items/Medikit.tscn" type="PackedScene" id=13]
+[ext_resource path="res://source/characters/player/BadassCactus.tscn" type="PackedScene" id=2]
+[ext_resource path="res://source/characters/enemies/Cop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://source/characters/enemies/Inmate.tscn" type="PackedScene" id=4]
+[ext_resource path="res://source/characters/enemies/Inmate2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://graphics/tilesets/Floor.tres" type="TileSet" id=6]
+[ext_resource path="res://graphics/tilesets/Walls.tres" type="TileSet" id=7]
+[ext_resource path="res://graphics/images/items/tileset_atlas.png" type="Texture" id=8]
+[ext_resource path="res://source/items/Keycard.tscn" type="PackedScene" id=9]
+[ext_resource path="res://source/interface/pixel_font.tres" type="DynamicFont" id=10]
+[ext_resource path="res://graphics/images/exit_sign.png" type="Texture" id=11]
+[ext_resource path="res://source/items/Medikit.tscn" type="PackedScene" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-
 points = PoolVector2Array( 31.6684, 31.2808, 63.4527, 46.7853, 30.6994, 63.4527, 1.24078, 48.7234 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-
 points = PoolVector2Array( 31.3894, 31.3934, 63.9415, 16.122, 63.5396, 48.6741, 32.1931, 62.7398 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-
 points = PoolVector2Array( 31.1645, 31.4696, 62.7938, 46.3539, 30.932, 63.7965, 0, 46.8191 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-
 points = PoolVector2Array( 28.8137, 33.0171, 62.6383, 49.0922, 30.4882, 62.4881, 0.0124359, 49.0922 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-
 points = PoolVector2Array( 32.0936, 31.5273, 63.2391, 14.7824, 63.2391, 47.6024, 32.7634, 63.3426 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-
 points = PoolVector2Array( 32.0936, 31.9779, 62.9042, 16.2377, 63.574, 46.7135, 32.0936, 62.7885 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-
 points = PoolVector2Array( 31.7932, 31.3082, 63.2737, 15.5679, 63.9435, 46.3786, 32.463, 62.1188 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
-
 points = PoolVector2Array( 32.4975, 32.6477, 63.643, 47.7181, 31.8277, 63.7932, -0.657364, 48.053 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
-
 points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683, 31.1924, 0.797943, 91.809, 30.6039, 92.1439, 37.3018 )
 
 [sub_resource type="TileSet" id=10]
-
 0/name = "tileset_atlas.png 0"
-0/texture = ExtResource( 9 )
+0/texture = ExtResource( 8 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 64, 64 )
@@ -69,7 +58,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 } ]
 0/z_index = 0
 2/name = "tileset_atlas.png 2"
-2/texture = ExtResource( 9 )
+2/texture = ExtResource( 8 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 0, 64, 64, 64 )
@@ -85,7 +74,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 } ]
 2/z_index = 0
 3/name = "tileset_atlas.png 3"
-3/texture = ExtResource( 9 )
+3/texture = ExtResource( 8 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 128, 0, 64, 64 )
@@ -95,7 +84,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 3/shapes = [  ]
 3/z_index = 0
 4/name = "tileset_atlas.png 4"
-4/texture = ExtResource( 9 )
+4/texture = ExtResource( 8 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 64, 32, 64, 64 )
@@ -111,7 +100,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 } ]
 4/z_index = 0
 5/name = "tileset_atlas.png 5"
-5/texture = ExtResource( 9 )
+5/texture = ExtResource( 8 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 192, 0, 64, 64 )
@@ -127,7 +116,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 } ]
 5/z_index = 0
 6/name = "tileset_atlas.png 6"
-6/texture = ExtResource( 9 )
+6/texture = ExtResource( 8 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 192, 96, 64, 64 )
@@ -143,7 +132,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 } ]
 6/z_index = 0
 7/name = "tileset_atlas.png 7"
-7/texture = ExtResource( 9 )
+7/texture = ExtResource( 8 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 128, 96, 64, 64 )
@@ -159,7 +148,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 } ]
 7/z_index = 0
 8/name = "tileset_atlas.png 8"
-8/texture = ExtResource( 9 )
+8/texture = ExtResource( 8 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 64, 96, 64, 64 )
@@ -175,7 +164,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 } ]
 8/z_index = 0
 9/name = "tileset_atlas.png 9"
-9/texture = ExtResource( 9 )
+9/texture = ExtResource( 8 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 0, 160, 96, 64 )
@@ -191,7 +180,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 } ]
 9/z_index = 0
 11/name = "tileset_atlas.png 11"
-11/texture = ExtResource( 9 )
+11/texture = ExtResource( 8 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 256, 0, 64, 64 )
@@ -207,7 +196,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 } ]
 11/z_index = 0
 12/name = "tileset_atlas.png 12"
-12/texture = ExtResource( 9 )
+12/texture = ExtResource( 8 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 256, 96, 64, 64 )
@@ -217,7 +206,7 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 12/shapes = [  ]
 12/z_index = 0
 13/name = "tileset_atlas.png 13"
-13/texture = ExtResource( 9 )
+13/texture = ExtResource( 8 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 320, 96, 64, 64 )
@@ -228,7 +217,6 @@ points = PoolVector2Array( 61.3333, 55.7212, 0.381836, 23.571, 1.05164, 15.8683,
 13/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=11]
-
 extents = Vector2( 50.8771, 12.192 )
 
 [node name="Level1" type="Node2D"]
@@ -237,78 +225,73 @@ __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
-volume_db = -15.0
-autoplay = true
-
-[node name="Badass_Cactus" parent="." instance=ExtResource( 3 )]
+[node name="Badass_Cactus" parent="." instance=ExtResource( 2 )]
 position = Vector2( 162.605, -2.521 )
 z_index = 1
 
 [node name="Enemies" type="Node" parent="."]
 editor/display_folded = true
 
-[node name="Cop" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Cop" parent="Enemies" instance=ExtResource( 3 )]
 position = Vector2( 763.757, -221.262 )
 
-[node name="Cop2" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Cop2" parent="Enemies" instance=ExtResource( 3 )]
 position = Vector2( 915.185, -125.7 )
 
-[node name="Cop3" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Cop3" parent="Enemies" instance=ExtResource( 3 )]
 position = Vector2( 1186.95, 845.878 )
 
-[node name="Cop4" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Cop4" parent="Enemies" instance=ExtResource( 3 )]
 position = Vector2( 2373.14, 866.873 )
 
-[node name="Cop5" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Cop5" parent="Enemies" instance=ExtResource( 3 )]
 position = Vector2( 2462.95, 816.719 )
 
-[node name="Cop6" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Cop6" parent="Enemies" instance=ExtResource( 3 )]
 position = Vector2( 1392.23, 404.994 )
 
-[node name="Inmate" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Inmate" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 887.252, -303.592 )
 
-[node name="Inmate2" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Inmate2" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 1111.45, -172.011 )
 
-[node name="Inmate6" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Inmate6" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 1683.2, -40.1539 )
 
-[node name="Inmate7" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Inmate7" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 1241.09, 126.052 )
 
-[node name="Inmate8" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Inmate8" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 1116.99, 153.754 )
 
-[node name="Inmate10" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Inmate10" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 2153.89, 544.484 )
 
-[node name="Inmate11" parent="Enemies" instance=ExtResource( 5 )]
+[node name="Inmate11" parent="Enemies" instance=ExtResource( 4 )]
 position = Vector2( 1914.78, 664.619 )
 
-[node name="Inmate3" parent="Enemies" instance=ExtResource( 6 )]
+[node name="Inmate3" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 775.63, 69.8067 )
 
-[node name="Inmate4" parent="Enemies" instance=ExtResource( 6 )]
+[node name="Inmate4" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1029.37, -268.146 )
 
-[node name="Inmate5" parent="Enemies" instance=ExtResource( 6 )]
+[node name="Inmate5" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1590.04, -84.2113 )
 
-[node name="Inmate12" parent="Enemies" instance=ExtResource( 6 )]
+[node name="Inmate12" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1658.86, 423.156 )
 
-[node name="Inmate13" parent="Enemies" instance=ExtResource( 6 )]
+[node name="Inmate13" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1658.86, 423.156 )
 
-[node name="Inmate9" parent="Enemies" instance=ExtResource( 6 )]
+[node name="Inmate9" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1185.04, 124.79 )
 
 [node name="floor" type="TileMap" parent="."]
 mode = 1
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 6 )
 cell_size = Vector2( 64, 32 )
 collision_layer = 2
 collision_mask = 29
@@ -318,7 +301,7 @@ tile_data = PoolIntArray( -1834986, 1, 0, -1834985, 1, 0, -1834984, 1, 0, -18349
 [node name="floor_collision" type="TileMap" parent="."]
 visible = false
 mode = 1
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 6 )
 cell_size = Vector2( 64, 32 )
 collision_layer = 2
 collision_mask = 29
@@ -328,7 +311,7 @@ tile_data = PoolIntArray( -1900523, 8, 0, -1900522, 8, 0, -1900521, 8, 0, -19005
 [node name="wall_level01" type="TileMap" parent="."]
 position = Vector2( -1, 1 )
 mode = 1
-tile_set = ExtResource( 8 )
+tile_set = ExtResource( 7 )
 cell_size = Vector2( 64, 32 )
 collision_layer = 2
 collision_mask = 29
@@ -347,12 +330,12 @@ tile_data = PoolIntArray( -983030, 536870915, 0, -983029, 536870915, 0, -983028,
 
 [node name="TileMap" type="TileMap" parent="."]
 mode = 1
-tile_set = ExtResource( 8 )
+tile_set = ExtResource( 7 )
 cell_size = Vector2( 64, 32 )
 format = 1
 tile_data = PoolIntArray( -917501, 21, 0, -917489, 21, 0, -851965, 21, 0, -851959, 22, 0, -851958, 22, 0, -851953, 21, 0, -851952, 21, 0, -786417, 21, 0, -786416, 21, 0, -720893, 21, 0, -720892, 22, 0, -720891, 21, 0, -720887, 22, 0, -720881, 21, 0, -720880, 21, 0, -655357, 21, 0, -655356, 21, 0, -655355, 21, 0, -655354, 21, 0, -655352, 21, 0, -655351, 22, 0, -655345, 21, 0, -655344, 21, 0, -524289, 22, 0, -589824, 22, 0, -589823, 22, 0, -589822, 22, 0, -589821, 22, 0, -589820, 21, 0, -589819, 21, 0, -589818, 21, 0, -589816, 21, 0, -589811, 22, 0, -589810, 22, 0, -589809, 22, 0, -589808, 21, 0, -524288, 22, 0, -524287, 22, 0, -524286, 22, 0, -524285, 22, 0, -524283, 21, 0, -524282, 21, 0, -524280, 21, 0, -524277, 22, 0, -524276, 22, 0, -524275, 22, 0, -524274, 22, 0, -524273, 22, 0, -524272, 22, 0, -458749, 21, 0, -458747, 21, 0, -458746, 21, 0, -458744, 21, 0, -458737, 21, 0, -393213, 21, 0, -393212, 21, 0, -393211, 21, 0, -393210, 21, 0, -393208, 21, 0, -393201, 21, 0, -393200, 21, 0, -327676, 22, 0, -327675, 22, 0, -327674, 21, 0, -327672, 21, 0, -327665, 21, 0, -327664, 21, 0, -262141, 21, 0, -262140, 22, 0, -262139, 22, 0, -262138, 22, 0, -262135, 22, 0, -262134, 22, 0, -262129, 21, 0, -262128, 21, 0, -196605, 21, 0, -196603, 22, 0, -196602, 22, 0, -196599, 23, 0, -196593, 21, 0, -196592, 21, 0, -65537, 22, 0, -131072, 22, 0, -131071, 22, 0, -131070, 22, 0, -131069, 22, 0, -131068, 21, 0, -131065, 23, 0, -131063, 23, 0, -131062, 22, 0, -131061, 22, 0, -131060, 22, 0, -131059, 22, 0, -131058, 22, 0, -131057, 22, 0, -131056, 21, 0, -65536, 22, 0, -65535, 22, 0, -65534, 22, 0, -65533, 22, 0, -65532, 22, 0, -65529, 23, 0, -65527, 23, 0, -65525, 22, 0, -65524, 22, 0, -65523, 22, 0, -65522, 22, 0, -65521, 22, 0, -65520, 22, 0, 7, 23, 0, 8, 23, 0, 9, 23, 0, 65543, 22, 0, 65544, 22, 0 )
 
-[node name="Keycard" parent="." instance=ExtResource( 10 )]
+[node name="Keycard" parent="." instance=ExtResource( 9 )]
 position = Vector2( 2499.59, 878.164 )
 
 [node name="Level exit" type="Area2D" parent="."]
@@ -370,7 +353,7 @@ margin_top = 382.797
 margin_right = 1024.58
 margin_bottom = 399.797
 rect_rotation = -27.9283
-custom_fonts/font = ExtResource( 11 )
+custom_fonts/font = ExtResource( 10 )
 text = "Keycard needed"
 
 [node name="Label2" type="Label" parent="."]
@@ -380,17 +363,17 @@ margin_bottom = 14.0
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 964.182, 413.808 )
 rotation = -0.444589
-texture = ExtResource( 12 )
+texture = ExtResource( 11 )
 
 [node name="medkits" type="Node" parent="."]
 
-[node name="Medikit" parent="medkits" instance=ExtResource( 13 )]
+[node name="Medikit" parent="medkits" instance=ExtResource( 12 )]
 position = Vector2( 1192.85, 160.253 )
 
-[node name="Medikit2" parent="medkits" instance=ExtResource( 13 )]
+[node name="Medikit2" parent="medkits" instance=ExtResource( 12 )]
 position = Vector2( 2476.17, 510.485 )
 
-[node name="Medikit3" parent="medkits" instance=ExtResource( 13 )]
+[node name="Medikit3" parent="medkits" instance=ExtResource( 12 )]
 position = Vector2( 1102.39, 832.284 )
 
 [connection signal="body_entered" from="Level exit" to="." method="_on_Level_exit_body_entered"]

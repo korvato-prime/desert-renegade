@@ -34,11 +34,12 @@ var tex_inmate2_dead = preload("res://graphics/images/enemies/inmate002_dying13.
 var tex_cop_dead = preload("res://graphics/images/enemies/cop_dying15.png")
 var tex_pyromaniac_dead = preload("res://graphics/images/enemies/pyromaniac_death12.png")
 
-# Global.tscn
 
+# Global.tscn
 var next_scene = null
 
 onready var anim = $AnimationPlayer
+onready var looper = $Looper
 
 func play_pickup():
 	$AudioStreamPlayer.play()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://source/Level2.gd" type="Script" id=1]
 [ext_resource path="res://graphics/tilesets/Floor.tres" type="TileSet" id=2]
@@ -10,61 +10,47 @@
 [ext_resource path="res://source/characters/enemies/Inmate.tscn" type="PackedScene" id=8]
 [ext_resource path="res://graphics/images/glitch.png" type="Texture" id=9]
 [ext_resource path="res://graphics/images/enemies/inmate.png" type="Texture" id=10]
-[ext_resource path="res://audio/music/Level2_Loop.wav" type="AudioStream" id=11]
-[ext_resource path="res://graphics/images/survive.png" type="Texture" id=12]
-[ext_resource path="res://source/characters/enemies/Spawner.tscn" type="PackedScene" id=13]
-[ext_resource path="res://source/items/Medikit.tscn" type="PackedScene" id=14]
+[ext_resource path="res://graphics/images/survive.png" type="Texture" id=11]
+[ext_resource path="res://source/characters/enemies/Spawner.tscn" type="PackedScene" id=12]
+[ext_resource path="res://source/items/Medikit.tscn" type="PackedScene" id=13]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-
 points = PoolVector2Array( 31.3894, 31.3934, 63.9415, 16.122, 63.5396, 48.6741, 32.1931, 62.7398 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-
 points = PoolVector2Array( 15.984, 36.6024, 13.6397, 31.2441, 10.9606, 30.2394, 8.61627, 26.5555, 9.62097, 16.1737, 18.6632, 12.8247, 18.9981, 22.8716, 28.3753, 23.8763, 33.0638, 29.9045, 29.7148, 35.2628, 29.045, 40.9561, 22.3471, 42.2957, 17.3236, 39.9514 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-
 points = PoolVector2Array( 11.9308, 42.6306, 10.9261, 23.2065, 23.6522, 17.8482, 23.6522, 27.5602, 33.3642, 32.9186, 34.034, 42.6306, 23.6522, 48.3239 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-
 points = PoolVector2Array( 17.3926, 31.3598, 31.1234, 32.0296, 27.4396, 41.4067, 21.0765, 40.0671 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-
 points = PoolVector2Array( 31.1645, 31.4696, 62.7938, 46.3539, 30.932, 63.7965, 0, 46.8191 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-
 points = PoolVector2Array( 21.3769, 41.4067, 15.6837, 32.0296, 28.7447, 32.0296, 25.7306, 40.7369 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-
 points = PoolVector2Array( 28.8137, 33.0171, 62.6383, 49.0922, 30.4882, 62.4881, 0.0124359, 49.0922 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
-
 points = PoolVector2Array( 32.0936, 31.5273, 63.2391, 14.7824, 63.2391, 47.6024, 32.7634, 63.3426 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
-
 points = PoolVector2Array( 32.0936, 31.9779, 62.9042, 16.2377, 63.574, 46.7135, 32.0936, 62.7885 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
-
 points = PoolVector2Array( 31.7932, 31.3082, 63.2737, 15.5679, 63.9435, 46.3786, 32.463, 62.1188 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
-
 points = PoolVector2Array( 0.65432, 15.8656, 32.051, -0.414154, 62.5174, 14.2376, 62.75, 47.2623, 31.8184, 63.3095, -0.0433884, 47.4949 )
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
-
 points = PoolVector2Array( 66.196, 5.05785, 91.7554, 17.5964, 44.4946, 45.0849, 17.0062, 30.6173 )
 
 [sub_resource type="TileSet" id=13]
-
 0/name = "tileset_atlas.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
@@ -379,15 +365,12 @@ points = PoolVector2Array( 66.196, 5.05785, 91.7554, 17.5964, 44.4946, 45.0849, 
 25/z_index = 0
 
 [sub_resource type="CircleShape2D" id=14]
-
 radius = 27.1925
 
 [sub_resource type="CircleShape2D" id=15]
-
 radius = 54.7628
 
 [sub_resource type="CircleShape2D" id=16]
-
 radius = 54.4318
 
 [node name="Level2" type="Node2D"]
@@ -665,11 +648,6 @@ position = Vector2( 2605.49, 1520.38 )
 position = Vector2( 22.3557, -18.3462 )
 shape = SubResource( 14 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 11 )
-volume_db = -15.0
-autoplay = true
-
 [node name="survivepop" type="Area2D" parent="."]
 editor/display_folded = true
 position = Vector2( 1892.54, 1234.17 )
@@ -688,14 +666,14 @@ anchor_bottom = 1.0
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 12 )
+texture = ExtResource( 11 )
 
 [node name="Enemies" type="Node" parent="."]
 
-[node name="Spawner" parent="Enemies" instance=ExtResource( 13 )]
+[node name="Spawner" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 2583.25, 762.024 )
 
-[node name="Spawner2" parent="Enemies" instance=ExtResource( 13 )]
+[node name="Spawner2" parent="Enemies" instance=ExtResource( 12 )]
 position = Vector2( 2835.88, 756.302 )
 spawnScene = ExtResource( 6 )
 
@@ -711,13 +689,13 @@ shape = SubResource( 16 )
 
 [node name="helthkits" type="Node" parent="."]
 
-[node name="Medikit" parent="helthkits" instance=ExtResource( 14 )]
+[node name="Medikit" parent="helthkits" instance=ExtResource( 13 )]
 position = Vector2( 1241.09, 1646.29 )
 
-[node name="Medikit2" parent="helthkits" instance=ExtResource( 14 )]
+[node name="Medikit2" parent="helthkits" instance=ExtResource( 13 )]
 position = Vector2( 2427.57, 1517.8 )
 
-[node name="Medikit3" parent="helthkits" instance=ExtResource( 14 )]
+[node name="Medikit3" parent="helthkits" instance=ExtResource( 13 )]
 position = Vector2( 2382.87, 1871.86 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

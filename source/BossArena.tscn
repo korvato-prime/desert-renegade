@@ -1,12 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://source/BossArena.gd" type="Script" id=1]
 [ext_resource path="res://graphics/tilesets/Floor.tres" type="TileSet" id=2]
 [ext_resource path="res://source/characters/player/BadassCactus.tscn" type="PackedScene" id=3]
 [ext_resource path="res://source/characters/enemies/Pyromaniac.tscn" type="PackedScene" id=4]
-[ext_resource path="res://audio/music/Intro_Boss.wav" type="AudioStream" id=5]
-[ext_resource path="res://graphics/tilesets/Walls.tres" type="TileSet" id=6]
-[ext_resource path="res://source/items/Medikit.tscn" type="PackedScene" id=7]
+[ext_resource path="res://graphics/tilesets/Walls.tres" type="TileSet" id=5]
+[ext_resource path="res://source/items/Medikit.tscn" type="PackedScene" id=6]
 
 [node name="BossArena" type="Node2D"]
 script = ExtResource( 1 )
@@ -32,23 +31,19 @@ position = Vector2( 487.009, 800.642 )
 [node name="Pyromaniac" parent="." instance=ExtResource( 4 )]
 position = Vector2( 726.617, 584.41 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-autoplay = true
-
 [node name="TileMap2" type="TileMap" parent="."]
 mode = 1
-tile_set = ExtResource( 6 )
+tile_set = ExtResource( 5 )
 cell_size = Vector2( 64, 32 )
 format = 1
 tile_data = PoolIntArray( 39, 0, 0, 65557, 536870946, 0, 65559, 536870950, 0, 65561, 536870947, 0, 65563, 536870948, 0, 65570, 35, 0, 131107, 536870950, 0, 327721, 37, 0, 589844, 536870951, 0, 589866, 536870938, 0, 852004, 36, 0, 852009, 35, 0, 983062, 536870947, 0, 1048617, 35, 0, 1179669, 37, 0, 1245225, 38, 0, 1376277, 38, 0, 1441828, 34, 0, 1441833, 35, 0 )
 
 [node name="Medkits" type="Node" parent="."]
 
-[node name="Medikit" parent="Medkits" instance=ExtResource( 7 )]
+[node name="Medikit" parent="Medkits" instance=ExtResource( 6 )]
 position = Vector2( -80.646, 747.867 )
 
-[node name="Medikit2" parent="Medkits" instance=ExtResource( 7 )]
+[node name="Medikit2" parent="Medkits" instance=ExtResource( 6 )]
 position = Vector2( 1344.32, 731.914 )
 
 [connection signal="death" from="Pyromaniac" to="." method="_on_Pyromaniac_death"]
