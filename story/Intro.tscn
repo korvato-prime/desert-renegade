@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://story/Intro.gd" type="Script" id=1]
+[ext_resource path="res://graphics/font/Poco.tres" type="DynamicFont" id=2]
+[ext_resource path="res://graphics/font/ARCADECLASSIC.TTF" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 3 )
+
+[node name="Intro" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 11.3981
+margin_top = 6.03885
+margin_right = 239.398
+margin_bottom = 187.039
+custom_fonts/normal_font = ExtResource( 2 )
+text = "I once was the sworn protector of Desert City, I was a vigilante... they used to call me \"Sharpfist\", making sure the night was secure and that all the scums of the night keeped at line. I love my city and kept it secure until the day my sidekick \"Iguana Boy\" betrayed me, the bastard sold himself to the gangs. Today I dont care about any of this anymore. Today I care about the supervised compassionate leave that was denied to me despite having exemplary conduct and and have been the protector of the city. Today I'm out."
+
+[node name="Button" type="Button" parent="."]
+margin_left = 146.0
+margin_top = 201.0
+margin_right = 246.0
+margin_bottom = 231.0
+custom_fonts/font = SubResource( 1 )
+text = "continue"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/survive.png-ceff0ece9a7c7252179356550c858495.stex"
+path="res://.import/fire_animations3.png-74b29fa8727f1e797875aeeb49d2976e.stex"
 
 [deps]
 
-source_file="res://graphics/images/survive.png"
-dest_files=[ "res://.import/survive.png-ceff0ece9a7c7252179356550c858495.stex" ]
+source_file="res://graphics/images/enemies/fire_animations3.png"
+dest_files=[ "res://.import/fire_animations3.png-74b29fa8727f1e797875aeeb49d2976e.stex" ]
 
 [params]
 

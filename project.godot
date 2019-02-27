@@ -27,7 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Sharpfist"
-run/main_scene="res://source/interface/Main.tscn"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [autoload]

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/glitch.png-4640c86b77f982179768c7219ee3151e.stex"
+path="res://.import/survive.png-177e6991ad5b91ec8ba4c88a81ffb3f7.stex"
 
 [deps]
 
-source_file="res://graphics/images/glitch.png"
-dest_files=[ "res://.import/glitch.png-4640c86b77f982179768c7219ee3151e.stex" ]
+source_file="res://graphics/images/interface/survive.png"
+dest_files=[ "res://.import/survive.png-177e6991ad5b91ec8ba4c88a81ffb3f7.stex" ]
 
 [params]
 

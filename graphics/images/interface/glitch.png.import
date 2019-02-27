@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fire_animations2.png-eb4625b5ea2a043929ec7bbcd43c02ac.stex"
+path="res://.import/glitch.png-058a20a61bb3b87077f4473e70ae37e0.stex"
 
 [deps]
 
-source_file="res://graphics/images/fire_animations2.png"
-dest_files=[ "res://.import/fire_animations2.png-eb4625b5ea2a043929ec7bbcd43c02ac.stex" ]
+source_file="res://graphics/images/interface/glitch.png"
+dest_files=[ "res://.import/glitch.png-058a20a61bb3b87077f4473e70ae37e0.stex" ]
 
 [params]
 

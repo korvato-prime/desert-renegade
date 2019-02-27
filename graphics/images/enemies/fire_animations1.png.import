@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fire_animations4.png-984761e33978320c7bfb2c5343b33217.stex"
+path="res://.import/fire_animations1.png-198eb44152acdcc7de3e0be7e2f027f7.stex"
 
 [deps]
 
-source_file="res://graphics/images/fire_animations4.png"
-dest_files=[ "res://.import/fire_animations4.png-984761e33978320c7bfb2c5343b33217.stex" ]
+source_file="res://graphics/images/enemies/fire_animations1.png"
+dest_files=[ "res://.import/fire_animations1.png-198eb44152acdcc7de3e0be7e2f027f7.stex" ]
 
 [params]
 
